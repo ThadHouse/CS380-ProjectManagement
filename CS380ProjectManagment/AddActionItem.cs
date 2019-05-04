@@ -18,11 +18,6 @@ namespace CS380ProjectManagment
         }
 
 
-        // TODO: Please Delete Me
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            progressBar1.Value++;
-        }
+        
     }
 }
