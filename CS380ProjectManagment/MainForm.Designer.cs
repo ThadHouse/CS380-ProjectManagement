@@ -74,6 +74,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.toolStripContainer3 = new System.Windows.Forms.ToolStripContainer();
+            this.loadGCButton = new System.Windows.Forms.Button();
+            this.deleteGcButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.toolStripContainer2.SuspendLayout();
@@ -131,6 +133,8 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Silver;
+            this.tabPage2.Controls.Add(this.deleteGcButton);
+            this.tabPage2.Controls.Add(this.loadGCButton);
             this.tabPage2.Controls.Add(this.comboBox3);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.comboBox4);
@@ -584,6 +588,26 @@
             this.toolStripContainer3.TabIndex = 0;
             this.toolStripContainer3.Text = "toolStripContainer3";
             // 
+            // loadGCButton
+            // 
+            this.loadGCButton.Location = new System.Drawing.Point(448, 41);
+            this.loadGCButton.Name = "loadGCButton";
+            this.loadGCButton.Size = new System.Drawing.Size(148, 64);
+            this.loadGCButton.TabIndex = 25;
+            this.loadGCButton.Text = "Load Gantt Chart";
+            this.loadGCButton.UseVisualStyleBackColor = true;
+            this.loadGCButton.Click += new System.EventHandler(this.LoadGCButton_Click);
+            // 
+            // deleteGcButton
+            // 
+            this.deleteGcButton.Location = new System.Drawing.Point(448, 111);
+            this.deleteGcButton.Name = "deleteGcButton";
+            this.deleteGcButton.Size = new System.Drawing.Size(148, 68);
+            this.deleteGcButton.TabIndex = 25;
+            this.deleteGcButton.Text = "Delete Gantt Chart";
+            this.deleteGcButton.UseVisualStyleBackColor = true;
+            this.deleteGcButton.Click += new System.EventHandler(this.DeleteGcButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -662,6 +686,8 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button updateTaskButton;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button deleteGcButton;
+        private System.Windows.Forms.Button loadGCButton;
     }
 }
 

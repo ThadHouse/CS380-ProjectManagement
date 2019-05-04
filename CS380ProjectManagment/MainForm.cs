@@ -57,5 +57,17 @@ namespace CS380ProjectManagment
             TaskUpdateForm creationForm = new TaskUpdateForm();
             creationForm.Show();
         }
+
+        private void LoadGCButton_Click(object sender, EventArgs e)
+        {
+            LoadGC gc = new LoadGC();
+            gc.Show();
+        }
+
+        private void DeleteGcButton_Click(object sender, EventArgs e)
+        {
+            DeleteGC gc = new DeleteGC();
+            gc.Show();
+        }
     }
 }
