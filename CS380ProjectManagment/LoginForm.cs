@@ -59,8 +59,14 @@ namespace CS380ProjectManagment
             string password = passwordTextBox.Text;
 
             await Task.Delay(4000);
-            Form1 form = new Form1();
+            MainForm form = new MainForm();
             form.Show();
+
+
+            var addActionItem = new AddActionItem();
+            this.Hide();
+            addActionItem.ShowDialog();
+            this.Show();
 
             // TODO: Finish this
         }
