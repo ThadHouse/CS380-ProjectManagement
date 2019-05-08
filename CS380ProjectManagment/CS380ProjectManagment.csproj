@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionItems\StatusConfigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActionItems\StatusConfigure.Designer.cs">
+      <DependentUpon>StatusConfigure.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteGC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,10 +71,10 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddActionItem.cs">
+    <Compile Include="ActionItems\AddActionItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddActionItem.Designer.cs">
+    <Compile Include="ActionItems\AddActionItem.Designer.cs">
       <DependentUpon>AddActionItem.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -97,6 +103,9 @@
     <Compile Include="TaskUpdateForm.Designer.cs">
       <DependentUpon>TaskUpdateForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActionItems\StatusConfigure.resx">
+      <DependentUpon>StatusConfigure.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteGC.resx">
       <DependentUpon>DeleteGC.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,7 +115,7 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddActionItem.resx">
+    <EmbeddedResource Include="ActionItems\AddActionItem.resx">
       <DependentUpon>AddActionItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">

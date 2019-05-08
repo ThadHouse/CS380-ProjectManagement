@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CS380ProjectManagment.ActionItems;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,6 +69,17 @@ namespace CS380ProjectManagment
         {
             DeleteGC gc = new DeleteGC();
             gc.Show();
+        }
+
+        private void CreateActionItemButton_Click(object sender, EventArgs e)
+        {
+            AddActionItem ai = new AddActionItem(true);
+            ai.Show();
+        }
+
+        private void WIPHandler(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Functionality is a Work In Progress. Come back later");
         }
     }
 }
