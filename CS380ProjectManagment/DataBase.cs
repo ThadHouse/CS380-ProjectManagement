@@ -37,7 +37,63 @@ namespace CS380ProjectManagment
 
     public class TaskData : Base
     {
+        public bool IsMilestone { get; set; }
+        public List<Guid> Resources { get; set; } = new List<Guid>();
+        public void AddResource(string name)
+        {
+            var res = Database.Instance.Resources.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                Resources.Add(res.Id);
+            }
+        }
+        public void RemoveResource(string name)
+        {
+            var res = Database.Instance.Resources.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                Resources.Remove(res.Id);
+            }
+        }
 
+        public DateTime ExpectedStartDate { get; set; }
+        public DateTime ExpectedEndDate { get; set; }
+        public int ExpectedDuration { get; set; }
+
+        public List<Guid> PredecessorTasks { get; set; } = new List<Guid>();
+
+        public List<Guid> StartToFinishTasks { get; set; } = new List<Guid>();
+        public List<Guid> StartToStartTasks { get; set; } = new List<Guid>();
+        public List<Guid> FinishToFinishTasks { get; set; } = new List<Guid>();
+        public List<Guid> FinishToStartTasks { get; set; } = new List<Guid>();
+
+        public void AddTask(string name, List<Guid> list)
+        {
+            var res = Database.Instance.Tasks.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                list.Add(res.Id);
+            }
+        }
+
+        public void RemoveTask(string name, List<Guid> list)
+        {
+            var res = Database.Instance.Tasks.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                list.Remove(res.Id);
+            }
+        }
+
+        public List<Guid> Issues { get; set; } = new List<Guid>();
+        public void AddIssue(string name)
+        {
+            var res = Database.Instance.Issues.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                Issues.Add(res.Id);
+            }
+        }
     }
 
     public class ResourceData : Base

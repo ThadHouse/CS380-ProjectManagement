@@ -81,9 +81,11 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(232, 123);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(280, 31);
             this.textBox1.TabIndex = 1;
             // 
@@ -100,7 +102,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(234, 202);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(278, 35);
@@ -119,7 +121,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(644, 173);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(6);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(348, 244);
@@ -144,7 +146,7 @@
             "Low",
             "None"});
             this.comboBox1.Location = new System.Drawing.Point(234, 285);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(6);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(278, 33);
             this.comboBox1.TabIndex = 7;
@@ -170,7 +172,7 @@
             "Minor",
             "None"});
             this.comboBox2.Location = new System.Drawing.Point(234, 381);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(6);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(278, 33);
             this.comboBox2.TabIndex = 9;
@@ -218,7 +220,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(1286, 129);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(396, 31);
             this.dateTimePicker1.TabIndex = 15;
@@ -226,7 +228,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(1286, 202);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(396, 31);
             this.dateTimePicker2.TabIndex = 16;
@@ -234,7 +236,7 @@
             // dateTimePicker3
             // 
             this.dateTimePicker3.Location = new System.Drawing.Point(1286, 285);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(396, 31);
             this.dateTimePicker3.TabIndex = 17;
@@ -242,7 +244,7 @@
             // dateTimePicker4
             // 
             this.dateTimePicker4.Location = new System.Drawing.Point(1286, 383);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(396, 31);
             this.dateTimePicker4.TabIndex = 18;
@@ -280,7 +282,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(232, 642);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(6);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(280, 273);
@@ -297,7 +299,7 @@
             "Complete",
             "None"});
             this.comboBox3.Location = new System.Drawing.Point(232, 469);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(6);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(280, 33);
             this.comboBox3.TabIndex = 23;
@@ -305,7 +307,7 @@
             // dateTimePicker5
             // 
             this.dateTimePicker5.Location = new System.Drawing.Point(1286, 469);
-            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker5.Name = "dateTimePicker5";
             this.dateTimePicker5.Size = new System.Drawing.Size(396, 31);
             this.dateTimePicker5.TabIndex = 24;
@@ -337,7 +339,7 @@
             this.Column1,
             this.Column3});
             this.dataGridView1.Location = new System.Drawing.Point(644, 642);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(352, 288);
             this.dataGridView1.TabIndex = 27;
@@ -359,7 +361,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.dataGridView2.Location = new System.Drawing.Point(1194, 642);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(492, 288);
             this.dataGridView2.TabIndex = 28;
@@ -377,7 +379,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(234, 994);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(282, 44);
             this.button1.TabIndex = 29;
@@ -387,7 +389,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(644, 992);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(352, 44);
             this.button2.TabIndex = 30;
@@ -397,7 +399,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(1194, 992);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(492, 44);
             this.button3.TabIndex = 31;
@@ -407,7 +409,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(644, 1067);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button4.Margin = new System.Windows.Forms.Padding(6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(352, 44);
             this.button4.TabIndex = 32;
@@ -417,7 +419,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(1194, 1067);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button5.Margin = new System.Windows.Forms.Padding(6);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(492, 44);
             this.button5.TabIndex = 33;
@@ -462,7 +464,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "NewIssue";
             this.Text = "New Issue";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

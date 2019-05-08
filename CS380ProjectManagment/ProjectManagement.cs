@@ -17,7 +17,16 @@ namespace CS380ProjectManagment
         {
             InitializeComponent();
 
-            var taskPanel = new BasePanel<TaskData>(TasksPage.Text, () => Database.Instance.Tasks);
+            var taskPanel = new BasePanel<TaskData>(TasksPage.Text, () => Database.Instance.Tasks, () => new TaskCreationForm(), 
+                (item) =>
+                {
+                    var task = Database.Instance.Tasks.Where(x => x.Name == item).FirstOrDefault();
+                    if (task != null)
+                    {
+                        return new TaskUpdateForm(task);
+                    }
+                    return null;
+                });
             TasksPage.Controls.Add(taskPanel);
             taskPanel.Dock = DockStyle.Fill;
 
@@ -46,7 +55,11 @@ namespace CS380ProjectManagment
             deliverablesTab.Controls.Add(deliverablesPanel);
             deliverablesPanel.Dock = DockStyle.Fill;
 
-            var issuesPanel = new BasePanel<IssueData>(issuesTab.Text, () => Database.Instance.Issues);
+            var issuesPanel = new BasePanel<IssueData>(issuesTab.Text, () => Database.Instance.Issues, () => new NewIssue(),
+                (item) =>
+                {
+                    return null;
+                });
             issuesTab.Controls.Add(issuesPanel);
             issuesPanel.Dock = DockStyle.Fill;
         }

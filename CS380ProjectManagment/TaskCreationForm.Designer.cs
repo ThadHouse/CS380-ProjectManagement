@@ -29,55 +29,55 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.milestoneCheckBox = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.availableResourcesListBox = new System.Windows.Forms.ListBox();
+            this.currentResourcesListBox = new System.Windows.Forms.ListBox();
+            this.addResourceButton = new System.Windows.Forms.Button();
+            this.removeResourceButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.expectedStartDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.expectedEndDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.expectedDuration = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.allTasksListBox = new System.Windows.Forms.ListBox();
+            this.addPredecessorButton = new System.Windows.Forms.Button();
+            this.removePredecessorButton = new System.Windows.Forms.Button();
+            this.predecessorListBox = new System.Windows.Forms.ListBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.finishToStartListBox = new System.Windows.Forms.ListBox();
+            this.removeFinishToStartButton = new System.Windows.Forms.Button();
+            this.addFinishToStartButton = new System.Windows.Forms.Button();
+            this.allTasksListBox2 = new System.Windows.Forms.ListBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.listBox7 = new System.Windows.Forms.ListBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.startToStartListBox = new System.Windows.Forms.ListBox();
+            this.removeStartToStartButton = new System.Windows.Forms.Button();
+            this.addStartToStartButton = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.listBox8 = new System.Windows.Forms.ListBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.finishToFinishListBox = new System.Windows.Forms.ListBox();
+            this.removeFinishToFinishButton = new System.Windows.Forms.Button();
+            this.addFinishToFinishButton = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.listBox9 = new System.Windows.Forms.ListBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.startToFinishListBox = new System.Windows.Forms.ListBox();
+            this.removeStartToFinishButton = new System.Windows.Forms.Button();
+            this.addStartToFinishButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.expectedDuration)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,26 +89,26 @@
             this.label1.Size = new System.Drawing.Size(91, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Task ID:";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // textBox1
+            // idTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(234, 81);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 31);
-            this.textBox1.TabIndex = 1;
+            this.idTextBox.Enabled = false;
+            this.idTextBox.Location = new System.Drawing.Point(234, 81);
+            this.idTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(196, 31);
+            this.idTextBox.TabIndex = 1;
             // 
-            // checkBox1
+            // milestoneCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(612, 85);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(204, 29);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Set as Milestone";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.milestoneCheckBox.AutoSize = true;
+            this.milestoneCheckBox.Location = new System.Drawing.Point(612, 85);
+            this.milestoneCheckBox.Margin = new System.Windows.Forms.Padding(6);
+            this.milestoneCheckBox.Name = "milestoneCheckBox";
+            this.milestoneCheckBox.Size = new System.Drawing.Size(204, 29);
+            this.milestoneCheckBox.TabIndex = 2;
+            this.milestoneCheckBox.Text = "Set as Milestone";
+            this.milestoneCheckBox.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -120,13 +120,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Name:";
             // 
-            // textBox2
+            // nameTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(234, 142);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 31);
-            this.textBox2.TabIndex = 4;
+            this.nameTextBox.Location = new System.Drawing.Point(234, 142);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(196, 31);
+            this.nameTextBox.TabIndex = 4;
             // 
             // label3
             // 
@@ -138,13 +138,13 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Description:";
             // 
-            // textBox3
+            // descriptionTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(234, 210);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(582, 31);
-            this.textBox3.TabIndex = 6;
+            this.descriptionTextBox.Location = new System.Drawing.Point(234, 210);
+            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(582, 31);
+            this.descriptionTextBox.TabIndex = 6;
             // 
             // label4
             // 
@@ -172,49 +172,51 @@
             this.label6.Location = new System.Drawing.Point(708, 283);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(183, 25);
+            this.label6.Size = new System.Drawing.Size(192, 25);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Added Resources";
+            this.label6.Text = "Current Resources";
             // 
-            // listBox1
+            // availableResourcesListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(234, 317);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(236, 179);
-            this.listBox1.TabIndex = 10;
+            this.availableResourcesListBox.FormattingEnabled = true;
+            this.availableResourcesListBox.ItemHeight = 25;
+            this.availableResourcesListBox.Location = new System.Drawing.Point(234, 317);
+            this.availableResourcesListBox.Margin = new System.Windows.Forms.Padding(6);
+            this.availableResourcesListBox.Name = "availableResourcesListBox";
+            this.availableResourcesListBox.Size = new System.Drawing.Size(236, 179);
+            this.availableResourcesListBox.TabIndex = 10;
             // 
-            // listBox2
+            // currentResourcesListBox
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 25;
-            this.listBox2.Location = new System.Drawing.Point(714, 317);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(236, 179);
-            this.listBox2.TabIndex = 11;
+            this.currentResourcesListBox.FormattingEnabled = true;
+            this.currentResourcesListBox.ItemHeight = 25;
+            this.currentResourcesListBox.Location = new System.Drawing.Point(714, 317);
+            this.currentResourcesListBox.Margin = new System.Windows.Forms.Padding(6);
+            this.currentResourcesListBox.Name = "currentResourcesListBox";
+            this.currentResourcesListBox.Size = new System.Drawing.Size(236, 179);
+            this.currentResourcesListBox.TabIndex = 11;
             // 
-            // button1
+            // addResourceButton
             // 
-            this.button1.Location = new System.Drawing.Point(522, 344);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 44);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Add -->";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addResourceButton.Location = new System.Drawing.Point(522, 344);
+            this.addResourceButton.Margin = new System.Windows.Forms.Padding(6);
+            this.addResourceButton.Name = "addResourceButton";
+            this.addResourceButton.Size = new System.Drawing.Size(150, 44);
+            this.addResourceButton.TabIndex = 12;
+            this.addResourceButton.Text = "Add -->";
+            this.addResourceButton.UseVisualStyleBackColor = true;
+            this.addResourceButton.Click += new System.EventHandler(this.AddResourceButton_Click);
             // 
-            // button2
+            // removeResourceButton
             // 
-            this.button2.Location = new System.Drawing.Point(522, 427);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 44);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "<-- Remove";
-            this.button2.UseVisualStyleBackColor = true;
+            this.removeResourceButton.Location = new System.Drawing.Point(522, 427);
+            this.removeResourceButton.Margin = new System.Windows.Forms.Padding(6);
+            this.removeResourceButton.Name = "removeResourceButton";
+            this.removeResourceButton.Size = new System.Drawing.Size(150, 44);
+            this.removeResourceButton.TabIndex = 13;
+            this.removeResourceButton.Text = "<-- Remove";
+            this.removeResourceButton.UseVisualStyleBackColor = true;
+            this.removeResourceButton.Click += new System.EventHandler(this.RemoveResourceButton_Click);
             // 
             // label7
             // 
@@ -226,13 +228,13 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Expected Start Date:";
             // 
-            // dateTimePicker1
+            // expectedStartDatePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(328, 544);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(396, 31);
-            this.dateTimePicker1.TabIndex = 15;
+            this.expectedStartDatePicker.Location = new System.Drawing.Point(328, 544);
+            this.expectedStartDatePicker.Margin = new System.Windows.Forms.Padding(6);
+            this.expectedStartDatePicker.Name = "expectedStartDatePicker";
+            this.expectedStartDatePicker.Size = new System.Drawing.Size(396, 31);
+            this.expectedStartDatePicker.TabIndex = 15;
             // 
             // label8
             // 
@@ -244,13 +246,13 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Expected End Date:";
             // 
-            // dateTimePicker2
+            // expectedEndDatePicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(328, 623);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(396, 31);
-            this.dateTimePicker2.TabIndex = 17;
+            this.expectedEndDatePicker.Location = new System.Drawing.Point(328, 623);
+            this.expectedEndDatePicker.Margin = new System.Windows.Forms.Padding(6);
+            this.expectedEndDatePicker.Name = "expectedEndDatePicker";
+            this.expectedEndDatePicker.Size = new System.Drawing.Size(396, 31);
+            this.expectedEndDatePicker.TabIndex = 17;
             // 
             // label9
             // 
@@ -262,13 +264,13 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Expected Duration:";
             // 
-            // numericUpDown1
+            // expectedDuration
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(328, 698);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(6);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(146, 31);
-            this.numericUpDown1.TabIndex = 19;
+            this.expectedDuration.Location = new System.Drawing.Point(328, 698);
+            this.expectedDuration.Margin = new System.Windows.Forms.Padding(6);
+            this.expectedDuration.Name = "expectedDuration";
+            this.expectedDuration.Size = new System.Drawing.Size(146, 31);
+            this.expectedDuration.TabIndex = 19;
             // 
             // label10
             // 
@@ -300,45 +302,47 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "List of Tasks";
             // 
-            // listBox3
+            // allTasksListBox
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 25;
-            this.listBox3.Location = new System.Drawing.Point(334, 825);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(236, 179);
-            this.listBox3.TabIndex = 23;
+            this.allTasksListBox.FormattingEnabled = true;
+            this.allTasksListBox.ItemHeight = 25;
+            this.allTasksListBox.Location = new System.Drawing.Point(334, 825);
+            this.allTasksListBox.Margin = new System.Windows.Forms.Padding(6);
+            this.allTasksListBox.Name = "allTasksListBox";
+            this.allTasksListBox.Size = new System.Drawing.Size(236, 179);
+            this.allTasksListBox.TabIndex = 23;
             // 
-            // button3
+            // addPredecessorButton
             // 
-            this.button3.Location = new System.Drawing.Point(612, 848);
-            this.button3.Margin = new System.Windows.Forms.Padding(6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 44);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Add -->";
-            this.button3.UseVisualStyleBackColor = true;
+            this.addPredecessorButton.Location = new System.Drawing.Point(612, 848);
+            this.addPredecessorButton.Margin = new System.Windows.Forms.Padding(6);
+            this.addPredecessorButton.Name = "addPredecessorButton";
+            this.addPredecessorButton.Size = new System.Drawing.Size(150, 44);
+            this.addPredecessorButton.TabIndex = 24;
+            this.addPredecessorButton.Text = "Add -->";
+            this.addPredecessorButton.UseVisualStyleBackColor = true;
+            this.addPredecessorButton.Click += new System.EventHandler(this.AddPredecessorButton_Click);
             // 
-            // button4
+            // removePredecessorButton
             // 
-            this.button4.Location = new System.Drawing.Point(612, 938);
-            this.button4.Margin = new System.Windows.Forms.Padding(6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 44);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "<-- Remove";
-            this.button4.UseVisualStyleBackColor = true;
+            this.removePredecessorButton.Location = new System.Drawing.Point(612, 938);
+            this.removePredecessorButton.Margin = new System.Windows.Forms.Padding(6);
+            this.removePredecessorButton.Name = "removePredecessorButton";
+            this.removePredecessorButton.Size = new System.Drawing.Size(150, 44);
+            this.removePredecessorButton.TabIndex = 25;
+            this.removePredecessorButton.Text = "<-- Remove";
+            this.removePredecessorButton.UseVisualStyleBackColor = true;
+            this.removePredecessorButton.Click += new System.EventHandler(this.RemovePredecessorButton_Click);
             // 
-            // listBox4
+            // predecessorListBox
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 25;
-            this.listBox4.Location = new System.Drawing.Point(798, 825);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(236, 179);
-            this.listBox4.TabIndex = 26;
+            this.predecessorListBox.FormattingEnabled = true;
+            this.predecessorListBox.ItemHeight = 25;
+            this.predecessorListBox.Location = new System.Drawing.Point(798, 825);
+            this.predecessorListBox.Margin = new System.Windows.Forms.Padding(6);
+            this.predecessorListBox.Name = "predecessorListBox";
+            this.predecessorListBox.Size = new System.Drawing.Size(236, 179);
+            this.predecessorListBox.TabIndex = 26;
             // 
             // label13
             // 
@@ -360,45 +364,47 @@
             this.label14.TabIndex = 34;
             this.label14.Text = "Finish to Start";
             // 
-            // listBox5
+            // finishToStartListBox
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 25;
-            this.listBox5.Location = new System.Drawing.Point(684, 1085);
-            this.listBox5.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(164, 179);
-            this.listBox5.TabIndex = 33;
+            this.finishToStartListBox.FormattingEnabled = true;
+            this.finishToStartListBox.ItemHeight = 25;
+            this.finishToStartListBox.Location = new System.Drawing.Point(684, 1085);
+            this.finishToStartListBox.Margin = new System.Windows.Forms.Padding(6);
+            this.finishToStartListBox.Name = "finishToStartListBox";
+            this.finishToStartListBox.Size = new System.Drawing.Size(164, 179);
+            this.finishToStartListBox.TabIndex = 33;
             // 
-            // button5
+            // removeFinishToStartButton
             // 
-            this.button5.Location = new System.Drawing.Point(684, 1335);
-            this.button5.Margin = new System.Windows.Forms.Padding(6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(168, 44);
-            this.button5.TabIndex = 32;
-            this.button5.Text = "<-- Remove";
-            this.button5.UseVisualStyleBackColor = true;
+            this.removeFinishToStartButton.Location = new System.Drawing.Point(684, 1335);
+            this.removeFinishToStartButton.Margin = new System.Windows.Forms.Padding(6);
+            this.removeFinishToStartButton.Name = "removeFinishToStartButton";
+            this.removeFinishToStartButton.Size = new System.Drawing.Size(168, 44);
+            this.removeFinishToStartButton.TabIndex = 32;
+            this.removeFinishToStartButton.Text = "<-- Remove";
+            this.removeFinishToStartButton.UseVisualStyleBackColor = true;
+            this.removeFinishToStartButton.Click += new System.EventHandler(this.SuccessorRemoveButton_Click);
             // 
-            // button6
+            // addFinishToStartButton
             // 
-            this.button6.Location = new System.Drawing.Point(684, 1279);
-            this.button6.Margin = new System.Windows.Forms.Padding(6);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(168, 44);
-            this.button6.TabIndex = 31;
-            this.button6.Text = "Add -->";
-            this.button6.UseVisualStyleBackColor = true;
+            this.addFinishToStartButton.Location = new System.Drawing.Point(684, 1279);
+            this.addFinishToStartButton.Margin = new System.Windows.Forms.Padding(6);
+            this.addFinishToStartButton.Name = "addFinishToStartButton";
+            this.addFinishToStartButton.Size = new System.Drawing.Size(168, 44);
+            this.addFinishToStartButton.TabIndex = 31;
+            this.addFinishToStartButton.Text = "Add -->";
+            this.addFinishToStartButton.UseVisualStyleBackColor = true;
+            this.addFinishToStartButton.Click += new System.EventHandler(this.SuccessorAddButton_Click);
             // 
-            // listBox6
+            // allTasksListBox2
             // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.ItemHeight = 25;
-            this.listBox6.Location = new System.Drawing.Point(334, 1090);
-            this.listBox6.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(236, 179);
-            this.listBox6.TabIndex = 30;
+            this.allTasksListBox2.FormattingEnabled = true;
+            this.allTasksListBox2.ItemHeight = 25;
+            this.allTasksListBox2.Location = new System.Drawing.Point(334, 1090);
+            this.allTasksListBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.allTasksListBox2.Name = "allTasksListBox2";
+            this.allTasksListBox2.Size = new System.Drawing.Size(236, 179);
+            this.allTasksListBox2.TabIndex = 30;
             // 
             // label15
             // 
@@ -430,35 +436,37 @@
             this.label17.TabIndex = 38;
             this.label17.Text = "Start to Start";
             // 
-            // listBox7
+            // startToStartListBox
             // 
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.ItemHeight = 25;
-            this.listBox7.Location = new System.Drawing.Point(870, 1085);
-            this.listBox7.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(164, 179);
-            this.listBox7.TabIndex = 37;
+            this.startToStartListBox.FormattingEnabled = true;
+            this.startToStartListBox.ItemHeight = 25;
+            this.startToStartListBox.Location = new System.Drawing.Point(870, 1085);
+            this.startToStartListBox.Margin = new System.Windows.Forms.Padding(6);
+            this.startToStartListBox.Name = "startToStartListBox";
+            this.startToStartListBox.Size = new System.Drawing.Size(164, 179);
+            this.startToStartListBox.TabIndex = 37;
             // 
-            // button7
+            // removeStartToStartButton
             // 
-            this.button7.Location = new System.Drawing.Point(870, 1335);
-            this.button7.Margin = new System.Windows.Forms.Padding(6);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(168, 44);
-            this.button7.TabIndex = 36;
-            this.button7.Text = "<-- Remove";
-            this.button7.UseVisualStyleBackColor = true;
+            this.removeStartToStartButton.Location = new System.Drawing.Point(870, 1335);
+            this.removeStartToStartButton.Margin = new System.Windows.Forms.Padding(6);
+            this.removeStartToStartButton.Name = "removeStartToStartButton";
+            this.removeStartToStartButton.Size = new System.Drawing.Size(168, 44);
+            this.removeStartToStartButton.TabIndex = 36;
+            this.removeStartToStartButton.Text = "<-- Remove";
+            this.removeStartToStartButton.UseVisualStyleBackColor = true;
+            this.removeStartToStartButton.Click += new System.EventHandler(this.SuccessorRemoveButton_Click);
             // 
-            // button8
+            // addStartToStartButton
             // 
-            this.button8.Location = new System.Drawing.Point(870, 1279);
-            this.button8.Margin = new System.Windows.Forms.Padding(6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(168, 44);
-            this.button8.TabIndex = 35;
-            this.button8.Text = "Add -->";
-            this.button8.UseVisualStyleBackColor = true;
+            this.addStartToStartButton.Location = new System.Drawing.Point(870, 1279);
+            this.addStartToStartButton.Margin = new System.Windows.Forms.Padding(6);
+            this.addStartToStartButton.Name = "addStartToStartButton";
+            this.addStartToStartButton.Size = new System.Drawing.Size(168, 44);
+            this.addStartToStartButton.TabIndex = 35;
+            this.addStartToStartButton.Text = "Add -->";
+            this.addStartToStartButton.UseVisualStyleBackColor = true;
+            this.addStartToStartButton.Click += new System.EventHandler(this.SuccessorAddButton_Click);
             // 
             // label18
             // 
@@ -470,35 +478,37 @@
             this.label18.TabIndex = 42;
             this.label18.Text = "Finish to Finish";
             // 
-            // listBox8
+            // finishToFinishListBox
             // 
-            this.listBox8.FormattingEnabled = true;
-            this.listBox8.ItemHeight = 25;
-            this.listBox8.Location = new System.Drawing.Point(1050, 1085);
-            this.listBox8.Margin = new System.Windows.Forms.Padding(6);
-            this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(164, 179);
-            this.listBox8.TabIndex = 41;
+            this.finishToFinishListBox.FormattingEnabled = true;
+            this.finishToFinishListBox.ItemHeight = 25;
+            this.finishToFinishListBox.Location = new System.Drawing.Point(1050, 1085);
+            this.finishToFinishListBox.Margin = new System.Windows.Forms.Padding(6);
+            this.finishToFinishListBox.Name = "finishToFinishListBox";
+            this.finishToFinishListBox.Size = new System.Drawing.Size(164, 179);
+            this.finishToFinishListBox.TabIndex = 41;
             // 
-            // button9
+            // removeFinishToFinishButton
             // 
-            this.button9.Location = new System.Drawing.Point(1050, 1335);
-            this.button9.Margin = new System.Windows.Forms.Padding(6);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(168, 44);
-            this.button9.TabIndex = 40;
-            this.button9.Text = "<-- Remove";
-            this.button9.UseVisualStyleBackColor = true;
+            this.removeFinishToFinishButton.Location = new System.Drawing.Point(1050, 1335);
+            this.removeFinishToFinishButton.Margin = new System.Windows.Forms.Padding(6);
+            this.removeFinishToFinishButton.Name = "removeFinishToFinishButton";
+            this.removeFinishToFinishButton.Size = new System.Drawing.Size(168, 44);
+            this.removeFinishToFinishButton.TabIndex = 40;
+            this.removeFinishToFinishButton.Text = "<-- Remove";
+            this.removeFinishToFinishButton.UseVisualStyleBackColor = true;
+            this.removeFinishToFinishButton.Click += new System.EventHandler(this.SuccessorRemoveButton_Click);
             // 
-            // button10
+            // addFinishToFinishButton
             // 
-            this.button10.Location = new System.Drawing.Point(1050, 1279);
-            this.button10.Margin = new System.Windows.Forms.Padding(6);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(168, 44);
-            this.button10.TabIndex = 39;
-            this.button10.Text = "Add -->";
-            this.button10.UseVisualStyleBackColor = true;
+            this.addFinishToFinishButton.Location = new System.Drawing.Point(1050, 1279);
+            this.addFinishToFinishButton.Margin = new System.Windows.Forms.Padding(6);
+            this.addFinishToFinishButton.Name = "addFinishToFinishButton";
+            this.addFinishToFinishButton.Size = new System.Drawing.Size(168, 44);
+            this.addFinishToFinishButton.TabIndex = 39;
+            this.addFinishToFinishButton.Text = "Add -->";
+            this.addFinishToFinishButton.UseVisualStyleBackColor = true;
+            this.addFinishToFinishButton.Click += new System.EventHandler(this.SuccessorAddButton_Click);
             // 
             // label19
             // 
@@ -508,113 +518,114 @@
             this.label19.Size = new System.Drawing.Size(145, 25);
             this.label19.TabIndex = 46;
             this.label19.Text = "Start to Finish";
-            this.label19.Click += new System.EventHandler(this.Label19_Click);
             // 
-            // listBox9
+            // startToFinishListBox
             // 
-            this.listBox9.FormattingEnabled = true;
-            this.listBox9.ItemHeight = 25;
-            this.listBox9.Location = new System.Drawing.Point(1230, 1085);
-            this.listBox9.Name = "listBox9";
-            this.listBox9.Size = new System.Drawing.Size(164, 179);
-            this.listBox9.TabIndex = 45;
+            this.startToFinishListBox.FormattingEnabled = true;
+            this.startToFinishListBox.ItemHeight = 25;
+            this.startToFinishListBox.Location = new System.Drawing.Point(1230, 1085);
+            this.startToFinishListBox.Name = "startToFinishListBox";
+            this.startToFinishListBox.Size = new System.Drawing.Size(164, 179);
+            this.startToFinishListBox.TabIndex = 45;
             // 
-            // button11
+            // removeStartToFinishButton
             // 
-            this.button11.Location = new System.Drawing.Point(1230, 1335);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(168, 44);
-            this.button11.TabIndex = 44;
-            this.button11.Text = "<-- Remove";
-            this.button11.UseVisualStyleBackColor = true;
+            this.removeStartToFinishButton.Location = new System.Drawing.Point(1230, 1335);
+            this.removeStartToFinishButton.Name = "removeStartToFinishButton";
+            this.removeStartToFinishButton.Size = new System.Drawing.Size(168, 44);
+            this.removeStartToFinishButton.TabIndex = 44;
+            this.removeStartToFinishButton.Text = "<-- Remove";
+            this.removeStartToFinishButton.UseVisualStyleBackColor = true;
+            this.removeStartToFinishButton.Click += new System.EventHandler(this.SuccessorRemoveButton_Click);
             // 
-            // button12
+            // addStartToFinishButton
             // 
-            this.button12.Location = new System.Drawing.Point(1230, 1279);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(168, 44);
-            this.button12.TabIndex = 43;
-            this.button12.Text = "Add -->";
-            this.button12.UseVisualStyleBackColor = true;
+            this.addStartToFinishButton.Location = new System.Drawing.Point(1230, 1279);
+            this.addStartToFinishButton.Name = "addStartToFinishButton";
+            this.addStartToFinishButton.Size = new System.Drawing.Size(168, 44);
+            this.addStartToFinishButton.TabIndex = 43;
+            this.addStartToFinishButton.Text = "Add -->";
+            this.addStartToFinishButton.UseVisualStyleBackColor = true;
+            this.addStartToFinishButton.Click += new System.EventHandler(this.SuccessorAddButton_Click);
             // 
-            // button13
+            // saveButton
             // 
-            this.button13.Location = new System.Drawing.Point(1426, 1356);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(150, 44);
-            this.button13.TabIndex = 73;
-            this.button13.Text = "Save";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.Button13_Click);
+            this.saveButton.Location = new System.Drawing.Point(1426, 1356);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(150, 44);
+            this.saveButton.TabIndex = 73;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.Save_Click);
             // 
-            // button14
+            // cancelButton
             // 
-            this.button14.Location = new System.Drawing.Point(1426, 1300);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(150, 44);
-            this.button14.TabIndex = 74;
-            this.button14.Text = "Cancel";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.Button14_Click);
+            this.cancelButton.Location = new System.Drawing.Point(1426, 1300);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(150, 44);
+            this.cancelButton.TabIndex = 74;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // TaskCreationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1645, 1432);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.listBox9);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.startToFinishListBox);
+            this.Controls.Add(this.removeStartToFinishButton);
+            this.Controls.Add(this.addStartToFinishButton);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.listBox8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.finishToFinishListBox);
+            this.Controls.Add(this.removeFinishToFinishButton);
+            this.Controls.Add(this.addFinishToFinishButton);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.listBox7);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.startToStartListBox);
+            this.Controls.Add(this.removeStartToStartButton);
+            this.Controls.Add(this.addStartToStartButton);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.listBox5);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.listBox6);
+            this.Controls.Add(this.finishToStartListBox);
+            this.Controls.Add(this.removeFinishToStartButton);
+            this.Controls.Add(this.addFinishToStartButton);
+            this.Controls.Add(this.allTasksListBox2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.listBox3);
+            this.Controls.Add(this.predecessorListBox);
+            this.Controls.Add(this.removePredecessorButton);
+            this.Controls.Add(this.addPredecessorButton);
+            this.Controls.Add(this.allTasksListBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.expectedDuration);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.expectedEndDatePicker);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.expectedStartDatePicker);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.removeResourceButton);
+            this.Controls.Add(this.addResourceButton);
+            this.Controls.Add(this.currentResourcesListBox);
+            this.Controls.Add(this.availableResourcesListBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.milestoneCheckBox);
+            this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "TaskCreationForm";
             this.Text = "Task Creation Form";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expectedDuration)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -623,53 +634,53 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.CheckBox milestoneCheckBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox availableResourcesListBox;
+        private System.Windows.Forms.ListBox currentResourcesListBox;
+        private System.Windows.Forms.Button addResourceButton;
+        private System.Windows.Forms.Button removeResourceButton;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker expectedStartDatePicker;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker expectedEndDatePicker;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown expectedDuration;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox allTasksListBox;
+        private System.Windows.Forms.Button addPredecessorButton;
+        private System.Windows.Forms.Button removePredecessorButton;
+        private System.Windows.Forms.ListBox predecessorListBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.ListBox finishToStartListBox;
+        private System.Windows.Forms.Button removeFinishToStartButton;
+        private System.Windows.Forms.Button addFinishToStartButton;
+        private System.Windows.Forms.ListBox allTasksListBox2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ListBox listBox7;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ListBox startToStartListBox;
+        private System.Windows.Forms.Button removeStartToStartButton;
+        private System.Windows.Forms.Button addStartToStartButton;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ListBox listBox8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.ListBox finishToFinishListBox;
+        private System.Windows.Forms.Button removeFinishToFinishButton;
+        private System.Windows.Forms.Button addFinishToFinishButton;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ListBox listBox9;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.ListBox startToFinishListBox;
+        private System.Windows.Forms.Button removeStartToFinishButton;
+        private System.Windows.Forms.Button addStartToFinishButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button cancelButton;
     }
 }

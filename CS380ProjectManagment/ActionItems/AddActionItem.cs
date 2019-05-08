@@ -77,15 +77,16 @@ namespace CS380ProjectManagment.ActionItems
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(nameTextBox.Text))
+            {
+                MessageBox.Show("Must enter a name");
+                return;
+            }
             if (itemData == null)
             {
                 itemData = Database.NewItem<ActionItemData>(nameTextBox.Text, descriptionTextBox.Text);
             }
             itemData.Name = nameTextBox.Text;
-            if (string.IsNullOrWhiteSpace(itemData.Name))
-            {
-                itemData.Name = itemData.Id.ToString();
-            }
             itemData.Description = descriptionTextBox.Text;
             itemData.SetResource(selectedResource);
             itemData.ExpectedCompletionDate = expectedCompletion.Value;

@@ -55,7 +55,7 @@ namespace CS380ProjectManagment
 
         private void UpdateTaskButton_Click(object sender, EventArgs e)
         {
-            TaskUpdateForm creationForm = new TaskUpdateForm();
+            TaskUpdateForm creationForm = new TaskUpdateForm(null);
             creationForm.Show();
         }
 
