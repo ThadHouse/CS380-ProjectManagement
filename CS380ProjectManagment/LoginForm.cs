@@ -53,12 +53,12 @@ namespace CS380ProjectManagment
             showPasswordCheckBox.Enabled = false;
         }
 
-        private async Task HandleLogin()
+        private async System.Threading.Tasks.Task HandleLogin()
         {
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
 
-            MainForm form = new MainForm();
+            ProjectManagement form = new ProjectManagement();
             this.Hide();
             form.ShowDialog();
             this.Close();

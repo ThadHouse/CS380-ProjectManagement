@@ -30,7 +30,29 @@
         {
             this.toolStripContainer3 = new System.Windows.Forms.ToolStripContainer();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,6 +109,17 @@
             this.updateActionItemButton = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.deleteGcButton = new System.Windows.Forms.Button();
             this.loadGCButton = new System.Windows.Forms.Button();
@@ -119,39 +152,6 @@
             this.Successortasks = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ListofIssues = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabControl = new System.Windows.Forms.TabControl();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
             this.toolStripContainer3.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -200,6 +200,141 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Deliverables";
             // 
+            // comboBox11
+            // 
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "Name",
+            "Id",
+            "Priority",
+            "Severity",
+            "Date Raised",
+            "Date Assigned",
+            "Expected Completion Date",
+            "Actual Completion Date"});
+            this.comboBox11.Location = new System.Drawing.Point(1557, 132);
+            this.comboBox11.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(238, 33);
+            this.comboBox11.TabIndex = 47;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(1457, 142);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(91, 25);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "Filter By";
+            // 
+            // comboBox12
+            // 
+            this.comboBox12.AllowDrop = true;
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Items.AddRange(new object[] {
+            "Name",
+            "Description",
+            "Id",
+            "Priority",
+            "Severity",
+            "Date Raised",
+            "Date Assigned",
+            "Expected Completion Date",
+            "Actual Completion Date"});
+            this.comboBox12.Location = new System.Drawing.Point(1557, 50);
+            this.comboBox12.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(238, 33);
+            this.comboBox12.TabIndex = 45;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1463, 50);
+            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 25);
+            this.label12.TabIndex = 44;
+            this.label12.Text = "Sort By";
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(923, 132);
+            this.button31.Margin = new System.Windows.Forms.Padding(6);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(174, 44);
+            this.button31.TabIndex = 43;
+            this.button31.Text = "Import";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(923, 50);
+            this.button32.Margin = new System.Windows.Forms.Padding(6);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(174, 44);
+            this.button32.TabIndex = 42;
+            this.button32.Text = "Export";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(11, 132);
+            this.button33.Margin = new System.Windows.Forms.Padding(6);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(174, 66);
+            this.button33.TabIndex = 41;
+            this.button33.Text = "Search Deliverables";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(220, 50);
+            this.button34.Margin = new System.Windows.Forms.Padding(6);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(150, 126);
+            this.button34.TabIndex = 40;
+            this.button34.Text = "Create Deliverable";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(635, 132);
+            this.button35.Margin = new System.Windows.Forms.Padding(6);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(184, 66);
+            this.button35.TabIndex = 39;
+            this.button35.Text = "Delete Deliverable";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(635, 50);
+            this.button36.Margin = new System.Windows.Forms.Padding(6);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(184, 70);
+            this.button36.TabIndex = 38;
+            this.button36.Text = "Update Deliverable";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(11, 50);
+            this.button37.Margin = new System.Windows.Forms.Padding(6);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(150, 44);
+            this.button37.TabIndex = 37;
+            this.button37.Text = "Copy";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.WIPHandler);
+            // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.Silver;
@@ -221,6 +356,139 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Decisions";
             this.tabPage6.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "Name",
+            "Id",
+            "Priority",
+            "Severity",
+            "Date Raised",
+            "Date Assigned",
+            "Expected Completion Date",
+            "Actual Completion Date"});
+            this.comboBox9.Location = new System.Drawing.Point(1557, 140);
+            this.comboBox9.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(238, 33);
+            this.comboBox9.TabIndex = 47;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(1457, 150);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 25);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Filter By";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.AllowDrop = true;
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "Name",
+            "Description",
+            "Id",
+            "Priority",
+            "Severity",
+            "Date Raised",
+            "Date Assigned",
+            "Expected Completion Date",
+            "Actual Completion Date"});
+            this.comboBox10.Location = new System.Drawing.Point(1557, 58);
+            this.comboBox10.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(238, 33);
+            this.comboBox10.TabIndex = 45;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(1463, 58);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 25);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Sort By";
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(923, 140);
+            this.button24.Margin = new System.Windows.Forms.Padding(6);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(174, 44);
+            this.button24.TabIndex = 43;
+            this.button24.Text = "Import";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(923, 58);
+            this.button25.Margin = new System.Windows.Forms.Padding(6);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(174, 44);
+            this.button25.TabIndex = 42;
+            this.button25.Text = "Export";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(11, 140);
+            this.button26.Margin = new System.Windows.Forms.Padding(6);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(174, 66);
+            this.button26.TabIndex = 41;
+            this.button26.Text = "Search Action Item";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(220, 58);
+            this.button27.Margin = new System.Windows.Forms.Padding(6);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(150, 126);
+            this.button27.TabIndex = 40;
+            this.button27.Text = "Create Decision";
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(635, 140);
+            this.button28.Margin = new System.Windows.Forms.Padding(6);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(184, 66);
+            this.button28.TabIndex = 39;
+            this.button28.Text = "Delete Decision";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(635, 58);
+            this.button29.Margin = new System.Windows.Forms.Padding(6);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(184, 70);
+            this.button29.TabIndex = 38;
+            this.button29.Text = "Update Decision";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(11, 58);
+            this.button30.Margin = new System.Windows.Forms.Padding(6);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(150, 44);
+            this.button30.TabIndex = 37;
+            this.button30.Text = "Copy";
+            this.button30.UseVisualStyleBackColor = true;
             // 
             // tabPage5
             // 
@@ -731,6 +999,7 @@
             this.updateActionItemButton.TabIndex = 27;
             this.updateActionItemButton.Text = "Update Action Item";
             this.updateActionItemButton.UseVisualStyleBackColor = true;
+            this.updateActionItemButton.Click += new System.EventHandler(this.UpdateActionItemButton_Click);
             // 
             // button21
             // 
@@ -763,6 +1032,140 @@
             this.tabPage3.Size = new System.Drawing.Size(1848, 618);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Resources";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "Name",
+            "Id",
+            "Priority",
+            "Severity",
+            "Date Raised",
+            "Date Assigned",
+            "Expected Completion Date",
+            "Actual Completion Date"});
+            this.comboBox7.Location = new System.Drawing.Point(1574, 146);
+            this.comboBox7.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(238, 33);
+            this.comboBox7.TabIndex = 47;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(1474, 156);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 25);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "Filter By";
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.AllowDrop = true;
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "Name",
+            "Description",
+            "Id",
+            "Priority",
+            "Severity",
+            "Date Raised",
+            "Date Assigned",
+            "Expected Completion Date",
+            "Actual Completion Date"});
+            this.comboBox8.Location = new System.Drawing.Point(1574, 64);
+            this.comboBox8.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(238, 33);
+            this.comboBox8.TabIndex = 45;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(1480, 64);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 25);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Sort By";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(940, 146);
+            this.button11.Margin = new System.Windows.Forms.Padding(6);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(174, 44);
+            this.button11.TabIndex = 43;
+            this.button11.Text = "Import";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(940, 64);
+            this.button13.Margin = new System.Windows.Forms.Padding(6);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(174, 44);
+            this.button13.TabIndex = 42;
+            this.button13.Text = "Export";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(28, 146);
+            this.button18.Margin = new System.Windows.Forms.Padding(6);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(174, 44);
+            this.button18.TabIndex = 41;
+            this.button18.Text = "Search Action Item";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(237, 64);
+            this.button19.Margin = new System.Windows.Forms.Padding(6);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(150, 126);
+            this.button19.TabIndex = 40;
+            this.button19.Text = "Create Resource";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(652, 146);
+            this.button20.Margin = new System.Windows.Forms.Padding(6);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(184, 66);
+            this.button20.TabIndex = 39;
+            this.button20.Text = "Delete Resource";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(652, 64);
+            this.button22.Margin = new System.Windows.Forms.Padding(6);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(184, 70);
+            this.button22.TabIndex = 38;
+            this.button22.Text = "Update Resource";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.WIPHandler);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(28, 64);
+            this.button23.Margin = new System.Windows.Forms.Padding(6);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(150, 44);
+            this.button23.TabIndex = 37;
+            this.button23.Text = "Copy";
+            this.button23.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -1064,409 +1467,6 @@
             this.TabControl.SelectedIndex = 0;
             this.TabControl.Size = new System.Drawing.Size(1864, 665);
             this.TabControl.TabIndex = 0;
-            this.TabControl.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "Name",
-            "Id",
-            "Priority",
-            "Severity",
-            "Date Raised",
-            "Date Assigned",
-            "Expected Completion Date",
-            "Actual Completion Date"});
-            this.comboBox7.Location = new System.Drawing.Point(1574, 146);
-            this.comboBox7.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(238, 33);
-            this.comboBox7.TabIndex = 47;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1474, 156);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 25);
-            this.label7.TabIndex = 46;
-            this.label7.Text = "Filter By";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.AllowDrop = true;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            "Name",
-            "Description",
-            "Id",
-            "Priority",
-            "Severity",
-            "Date Raised",
-            "Date Assigned",
-            "Expected Completion Date",
-            "Actual Completion Date"});
-            this.comboBox8.Location = new System.Drawing.Point(1574, 64);
-            this.comboBox8.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(238, 33);
-            this.comboBox8.TabIndex = 45;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1480, 64);
-            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 25);
-            this.label8.TabIndex = 44;
-            this.label8.Text = "Sort By";
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(940, 146);
-            this.button11.Margin = new System.Windows.Forms.Padding(6);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(174, 44);
-            this.button11.TabIndex = 43;
-            this.button11.Text = "Import";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(940, 64);
-            this.button13.Margin = new System.Windows.Forms.Padding(6);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(174, 44);
-            this.button13.TabIndex = 42;
-            this.button13.Text = "Export";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(28, 146);
-            this.button18.Margin = new System.Windows.Forms.Padding(6);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(174, 44);
-            this.button18.TabIndex = 41;
-            this.button18.Text = "Search Action Item";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(237, 64);
-            this.button19.Margin = new System.Windows.Forms.Padding(6);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(150, 126);
-            this.button19.TabIndex = 40;
-            this.button19.Text = "Create Resource";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(652, 146);
-            this.button20.Margin = new System.Windows.Forms.Padding(6);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(184, 66);
-            this.button20.TabIndex = 39;
-            this.button20.Text = "Delete Resource";
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(652, 64);
-            this.button22.Margin = new System.Windows.Forms.Padding(6);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(184, 70);
-            this.button22.TabIndex = 38;
-            this.button22.Text = "Update Resource";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(28, 64);
-            this.button23.Margin = new System.Windows.Forms.Padding(6);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(150, 44);
-            this.button23.TabIndex = 37;
-            this.button23.Text = "Copy";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            "Name",
-            "Id",
-            "Priority",
-            "Severity",
-            "Date Raised",
-            "Date Assigned",
-            "Expected Completion Date",
-            "Actual Completion Date"});
-            this.comboBox9.Location = new System.Drawing.Point(1557, 140);
-            this.comboBox9.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(238, 33);
-            this.comboBox9.TabIndex = 47;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(1457, 150);
-            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 25);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Filter By";
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.AllowDrop = true;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            "Name",
-            "Description",
-            "Id",
-            "Priority",
-            "Severity",
-            "Date Raised",
-            "Date Assigned",
-            "Expected Completion Date",
-            "Actual Completion Date"});
-            this.comboBox10.Location = new System.Drawing.Point(1557, 58);
-            this.comboBox10.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(238, 33);
-            this.comboBox10.TabIndex = 45;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(1463, 58);
-            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 25);
-            this.label10.TabIndex = 44;
-            this.label10.Text = "Sort By";
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(923, 140);
-            this.button24.Margin = new System.Windows.Forms.Padding(6);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(174, 44);
-            this.button24.TabIndex = 43;
-            this.button24.Text = "Import";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(923, 58);
-            this.button25.Margin = new System.Windows.Forms.Padding(6);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(174, 44);
-            this.button25.TabIndex = 42;
-            this.button25.Text = "Export";
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(11, 140);
-            this.button26.Margin = new System.Windows.Forms.Padding(6);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(174, 66);
-            this.button26.TabIndex = 41;
-            this.button26.Text = "Search Action Item";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button27
-            // 
-            this.button27.Location = new System.Drawing.Point(220, 58);
-            this.button27.Margin = new System.Windows.Forms.Padding(6);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(150, 126);
-            this.button27.TabIndex = 40;
-            this.button27.Text = "Create Decision";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(635, 140);
-            this.button28.Margin = new System.Windows.Forms.Padding(6);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(184, 66);
-            this.button28.TabIndex = 39;
-            this.button28.Text = "Delete Decision";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button29
-            // 
-            this.button29.Location = new System.Drawing.Point(635, 58);
-            this.button29.Margin = new System.Windows.Forms.Padding(6);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(184, 70);
-            this.button29.TabIndex = 38;
-            this.button29.Text = "Update Decision";
-            this.button29.UseVisualStyleBackColor = true;
-            this.button29.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button30
-            // 
-            this.button30.Location = new System.Drawing.Point(11, 58);
-            this.button30.Margin = new System.Windows.Forms.Padding(6);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(150, 44);
-            this.button30.TabIndex = 37;
-            this.button30.Text = "Copy";
-            this.button30.UseVisualStyleBackColor = true;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
-            "Name",
-            "Id",
-            "Priority",
-            "Severity",
-            "Date Raised",
-            "Date Assigned",
-            "Expected Completion Date",
-            "Actual Completion Date"});
-            this.comboBox11.Location = new System.Drawing.Point(1557, 132);
-            this.comboBox11.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(238, 33);
-            this.comboBox11.TabIndex = 47;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1457, 142);
-            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 25);
-            this.label11.TabIndex = 46;
-            this.label11.Text = "Filter By";
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.AllowDrop = true;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
-            "Name",
-            "Description",
-            "Id",
-            "Priority",
-            "Severity",
-            "Date Raised",
-            "Date Assigned",
-            "Expected Completion Date",
-            "Actual Completion Date"});
-            this.comboBox12.Location = new System.Drawing.Point(1557, 50);
-            this.comboBox12.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(238, 33);
-            this.comboBox12.TabIndex = 45;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1463, 50);
-            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 25);
-            this.label12.TabIndex = 44;
-            this.label12.Text = "Sort By";
-            // 
-            // button31
-            // 
-            this.button31.Location = new System.Drawing.Point(923, 132);
-            this.button31.Margin = new System.Windows.Forms.Padding(6);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(174, 44);
-            this.button31.TabIndex = 43;
-            this.button31.Text = "Import";
-            this.button31.UseVisualStyleBackColor = true;
-            this.button31.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button32
-            // 
-            this.button32.Location = new System.Drawing.Point(923, 50);
-            this.button32.Margin = new System.Windows.Forms.Padding(6);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(174, 44);
-            this.button32.TabIndex = 42;
-            this.button32.Text = "Export";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button33
-            // 
-            this.button33.Location = new System.Drawing.Point(11, 132);
-            this.button33.Margin = new System.Windows.Forms.Padding(6);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(174, 66);
-            this.button33.TabIndex = 41;
-            this.button33.Text = "Search Deliverables";
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button34
-            // 
-            this.button34.Location = new System.Drawing.Point(220, 50);
-            this.button34.Margin = new System.Windows.Forms.Padding(6);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(150, 126);
-            this.button34.TabIndex = 40;
-            this.button34.Text = "Create Deliverable";
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button35
-            // 
-            this.button35.Location = new System.Drawing.Point(635, 132);
-            this.button35.Margin = new System.Windows.Forms.Padding(6);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(184, 66);
-            this.button35.TabIndex = 39;
-            this.button35.Text = "Delete Deliverable";
-            this.button35.UseVisualStyleBackColor = true;
-            this.button35.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button36
-            // 
-            this.button36.Location = new System.Drawing.Point(635, 50);
-            this.button36.Margin = new System.Windows.Forms.Padding(6);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(184, 70);
-            this.button36.TabIndex = 38;
-            this.button36.Text = "Update Deliverable";
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.WIPHandler);
-            // 
-            // button37
-            // 
-            this.button37.Location = new System.Drawing.Point(11, 50);
-            this.button37.Margin = new System.Windows.Forms.Padding(6);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(150, 44);
-            this.button37.TabIndex = 37;
-            this.button37.Text = "Copy";
-            this.button37.UseVisualStyleBackColor = true;
-            this.button37.Click += new System.EventHandler(this.WIPHandler);
             // 
             // MainForm
             // 

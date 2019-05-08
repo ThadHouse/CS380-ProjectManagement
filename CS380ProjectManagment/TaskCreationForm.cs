@@ -15,6 +15,7 @@ namespace CS380ProjectManagment
         public TaskCreationForm()
         {
             InitializeComponent();
+            this.Size = new Size(this.Size.Width, (int)(this.Size.Height * 1.35));
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -25,6 +26,16 @@ namespace CS380ProjectManagment
         private void Label19_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button14_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

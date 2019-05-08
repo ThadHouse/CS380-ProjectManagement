@@ -13,14 +13,43 @@ namespace CS380ProjectManagment.ActionItems
 {
     public partial class AddActionItem : Form
     {
-        public AddActionItem(bool add)
+        private ActionItemData itemData;
+        private ResourceData selectedResource;
+        public AddActionItem(ActionItemData itemData)
         {
             InitializeComponent();
-            if (!add)
+            if (itemData != null)
             {
-                taskIdBox.ReadOnly = true;
+                this.Text = "Update Action Item";
+                this.itemData = itemData;
+                idTextBox.Text = itemData.Id.ToString();
+                nameTextBox.Text = itemData.Name;
+                descriptionTextBox.Text = itemData.Description;
+                selectedResource = Database.Instance.Resources.Where(x => x.Id == itemData.Resource).FirstOrDefault();
+                if (selectedResource != null)
+                {
+                    CurrentResourceLabel.Text = selectedResource.Name;
+                }
+                if (!statusComboBox.Items.Contains(itemData.Status))
+                {
+                    statusComboBox.Items.Add(itemData.Status);
+                }
+                statusComboBox.SelectedItem = itemData.Status;
+                expectedCompletion.Value = itemData.ExpectedCompletionDate;
+                statusDescriptionTextBox.Text = itemData.StatusDescription;
             }
-            statusComboBox.SelectedIndex = 0;
+            else
+            {
+                statusComboBox.SelectedIndex = 0;
+            }
+            idTextBox.ReadOnly = true;
+            idTextBox.Enabled = false;
+
+            availableResourcesListBox.Items.Clear();
+            foreach (string res in Database.Instance.Resources.Select(x => x.Name))
+            {
+                availableResourcesListBox.Items.Add(res);
+            }
         }
 
         private void ConfigureStatusButton_Click(object sender, EventArgs e)
@@ -48,7 +77,53 @@ namespace CS380ProjectManagment.ActionItems
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            if (itemData == null)
+            {
+                itemData = Database.NewItem<ActionItemData>(nameTextBox.Text, descriptionTextBox.Text);
+            }
+            itemData.Name = nameTextBox.Text;
+            if (string.IsNullOrWhiteSpace(itemData.Name))
+            {
+                itemData.Name = itemData.Id.ToString();
+            }
+            itemData.Description = descriptionTextBox.Text;
+            itemData.SetResource(selectedResource);
+            itemData.ExpectedCompletionDate = expectedCompletion.Value;
+            itemData.Status = statusComboBox.Text;
+            itemData.StatusDescription = statusDescriptionTextBox.Text;
+            Database.Save();
             this.Close();
+        }
+
+        private void AddResourceButton_Click(object sender, EventArgs e)
+        {
+            if (selectedResource != null)
+            {
+                MessageBox.Show("Can only assign 1 resource");
+                return;
+            }
+
+            if (availableResourcesListBox.SelectedItem == null)
+            {
+                MessageBox.Show("Must select a resource");
+                return;
+            }
+
+            string selected = availableResourcesListBox.SelectedItem as string;
+            selectedResource = Database.Instance.Resources.Where(x => x.Name == selected).FirstOrDefault();
+            if (selectedResource == null)
+            {
+                MessageBox.Show("Hmm, weird DB error");
+                return;
+            }
+            CurrentResourceLabel.Text = selected;
+
+        }
+
+        private void RemoveResourceButton_Click(object sender, EventArgs e)
+        {
+            CurrentResourceLabel.Text = "None";
+            selectedResource = null;
         }
     }
 }

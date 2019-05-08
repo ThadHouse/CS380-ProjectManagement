@@ -73,13 +73,19 @@ namespace CS380ProjectManagment
 
         private void CreateActionItemButton_Click(object sender, EventArgs e)
         {
-            AddActionItem ai = new AddActionItem(true);
+            AddActionItem ai = new AddActionItem(null);
             ai.Show();
         }
 
         private void WIPHandler(object sender, EventArgs e)
         {
             MessageBox.Show("This Functionality is a Work In Progress. Come back later");
+        }
+
+        private void UpdateActionItemButton_Click(object sender, EventArgs e)
+        {
+            AddActionItem ai = new AddActionItem(null);
+            ai.Show();
         }
     }
 }

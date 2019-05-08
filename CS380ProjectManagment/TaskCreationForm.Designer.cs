@@ -504,7 +504,6 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(1224, 1060);
-            this.label19.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(145, 25);
             this.label19.TabIndex = 46;
@@ -516,7 +515,6 @@
             this.listBox9.FormattingEnabled = true;
             this.listBox9.ItemHeight = 25;
             this.listBox9.Location = new System.Drawing.Point(1230, 1085);
-            this.listBox9.Margin = new System.Windows.Forms.Padding(6);
             this.listBox9.Name = "listBox9";
             this.listBox9.Size = new System.Drawing.Size(164, 179);
             this.listBox9.TabIndex = 45;
@@ -524,7 +522,6 @@
             // button11
             // 
             this.button11.Location = new System.Drawing.Point(1230, 1335);
-            this.button11.Margin = new System.Windows.Forms.Padding(6);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(168, 44);
             this.button11.TabIndex = 44;
@@ -534,7 +531,6 @@
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(1230, 1279);
-            this.button12.Margin = new System.Windows.Forms.Padding(6);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(168, 44);
             this.button12.TabIndex = 43;
@@ -544,28 +540,28 @@
             // button13
             // 
             this.button13.Location = new System.Drawing.Point(1426, 1356);
-            this.button13.Margin = new System.Windows.Forms.Padding(6);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(150, 44);
             this.button13.TabIndex = 73;
             this.button13.Text = "Save";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.Button13_Click);
             // 
             // button14
             // 
             this.button14.Location = new System.Drawing.Point(1426, 1300);
-            this.button14.Margin = new System.Windows.Forms.Padding(6);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(150, 44);
             this.button14.TabIndex = 74;
             this.button14.Text = "Cancel";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.Button14_Click);
             // 
             // TaskCreationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 1440);
+            this.ClientSize = new System.Drawing.Size(1645, 1432);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.label19);
