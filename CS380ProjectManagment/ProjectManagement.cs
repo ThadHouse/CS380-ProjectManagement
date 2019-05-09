@@ -55,9 +55,14 @@ namespace CS380ProjectManagment
             deliverablesTab.Controls.Add(deliverablesPanel);
             deliverablesPanel.Dock = DockStyle.Fill;
 
-            var issuesPanel = new BasePanel<IssueData>(issuesTab.Text, () => Database.Instance.Issues, () => new NewIssue(),
+            var issuesPanel = new BasePanel<IssueData>(issuesTab.Text, () => Database.Instance.Issues, () => new NewIssue(null),
                 (item) =>
                 {
+                    var issue = Database.Instance.Issues.Where(x => x.Name == item).FirstOrDefault();
+                    if (issue != null)
+                    {
+                        return new NewIssue(issue);
+                    }
                     return null;
                 });
             issuesTab.Controls.Add(issuesPanel);

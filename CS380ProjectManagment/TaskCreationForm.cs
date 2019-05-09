@@ -53,6 +53,7 @@ namespace CS380ProjectManagment
 
         private void HandleTaskUpdate(TaskData data, ListBox tasks, List<Guid> guidList)
         {
+            guidList.Clear();
             foreach (string name in tasks.Items)
             {
                 data.AddTask(name, guidList);

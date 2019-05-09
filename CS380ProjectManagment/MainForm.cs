@@ -35,7 +35,7 @@ namespace CS380ProjectManagment
 
         private void UpdateIssue_Click(object sender, EventArgs e)
         {
-            NewIssue openForm = new NewIssue();
+            NewIssue openForm = new NewIssue(null);
             openForm.Text = "Update Issue";
             
             openForm.Show();
@@ -43,7 +43,7 @@ namespace CS380ProjectManagment
 
         private void CreateIssue_Click(object sender, EventArgs e)
         {
-            NewIssue openForm = new NewIssue();
+            NewIssue openForm = new NewIssue(null);
             openForm.Show();
         }
 

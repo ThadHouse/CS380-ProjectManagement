@@ -242,7 +242,7 @@ namespace CS380ProjectManagment
 
         private void CreateNewIssueButton_Click(object sender, EventArgs e)
         {
-            NewIssue newIssue = new NewIssue();
+            NewIssue newIssue = new NewIssue(null);
             newIssue.FormClosed += (o, e2) => {
                 issuesListBox.Items.Clear();
                 foreach (string res in Database.Instance.Issues.Select(x => x.Name))

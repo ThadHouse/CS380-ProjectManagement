@@ -108,7 +108,36 @@ namespace CS380ProjectManagment
 
     public class IssueData : Base
     {
+        public string Priority { get; set; }
+        public string Severity { get; set; }
+        public string Status { get; set; }
+        public string StatusDescription { get; set; }
+        public DateTime DateRaised { get; set; }
+        public DateTime DateAssigned { get; set; }
+        public DateTime ExpectedCompletionDate { get; set; }
+        public DateTime ActualCompletionDate { get; set; }
+        public DateTime LastUpdateDate { get; set; }
 
+        public List<Guid> ActionItems { get; set; } = new List<Guid>();
+        public List<Guid> Decisions { get; set; } = new List<Guid>();
+
+        public void AddActionItem(string name)
+        {
+            var res = Database.Instance.ActionItems.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                ActionItems.Add(res.Id);
+            }
+        }
+
+        public void AddDecision(string name)
+        {
+            var res = Database.Instance.Decisions.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                Decisions.Add(res.Id);
+            }
+        }
     }
 
     public class DecisionData : Base {
@@ -136,7 +165,7 @@ namespace CS380ProjectManagment
 
         public static void Save()
         {
-            File.WriteAllText("database.txt", JsonConvert.SerializeObject(Instance));
+            File.WriteAllText("database.txt", JsonConvert.SerializeObject(Instance, Formatting.Indented));
         }
 
 

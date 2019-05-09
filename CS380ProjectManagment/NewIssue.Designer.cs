@@ -29,44 +29,43 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.idTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.priorityComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.severityComboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateRaisedPicker = new System.Windows.Forms.DateTimePicker();
+            this.dateAssignedPicker = new System.Windows.Forms.DateTimePicker();
+            this.expectedCompletionDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.actualCompletitonDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.statusDescriptionTextBox = new System.Windows.Forms.TextBox();
+            this.statusComboBox = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.associateActionItemButton = new System.Windows.Forms.Button();
+            this.associateDecisionButton = new System.Windows.Forms.Button();
+            this.unassociateActionItemButton = new System.Windows.Forms.Button();
+            this.unassociateDecisionButton = new System.Windows.Forms.Button();
+            this.actionItemsListBox = new System.Windows.Forms.ListBox();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.currentActionItemsListBox = new System.Windows.Forms.ListBox();
+            this.decisionsListBox = new System.Windows.Forms.ListBox();
+            this.currentDecisionsListBox = new System.Windows.Forms.ListBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lastUpdatePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -79,15 +78,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Issue Id";
             // 
-            // textBox1
+            // idTextBox
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(232, 123);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(280, 31);
-            this.textBox1.TabIndex = 1;
+            this.idTextBox.Enabled = false;
+            this.idTextBox.Location = new System.Drawing.Point(232, 123);
+            this.idTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.ReadOnly = true;
+            this.idTextBox.Size = new System.Drawing.Size(280, 31);
+            this.idTextBox.TabIndex = 1;
             // 
             // label2
             // 
@@ -99,14 +98,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Issue Name";
             // 
-            // textBox2
+            // nameTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(234, 202);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(278, 35);
-            this.textBox2.TabIndex = 3;
+            this.nameTextBox.Location = new System.Drawing.Point(234, 202);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.nameTextBox.Multiline = true;
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(278, 35);
+            this.nameTextBox.TabIndex = 3;
             // 
             // label3
             // 
@@ -118,14 +117,14 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Issue Description";
             // 
-            // textBox3
+            // descriptionTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(644, 173);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(348, 244);
-            this.textBox3.TabIndex = 5;
+            this.descriptionTextBox.Location = new System.Drawing.Point(644, 173);
+            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.descriptionTextBox.Multiline = true;
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(348, 244);
+            this.descriptionTextBox.TabIndex = 5;
             // 
             // label4
             // 
@@ -137,19 +136,19 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Priority";
             // 
-            // comboBox1
+            // priorityComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.priorityComboBox.FormattingEnabled = true;
+            this.priorityComboBox.Items.AddRange(new object[] {
             "High",
             "Medium",
             "Low",
             "None"});
-            this.comboBox1.Location = new System.Drawing.Point(234, 285);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(278, 33);
-            this.comboBox1.TabIndex = 7;
+            this.priorityComboBox.Location = new System.Drawing.Point(234, 285);
+            this.priorityComboBox.Margin = new System.Windows.Forms.Padding(6);
+            this.priorityComboBox.Name = "priorityComboBox";
+            this.priorityComboBox.Size = new System.Drawing.Size(278, 33);
+            this.priorityComboBox.TabIndex = 7;
             // 
             // label5
             // 
@@ -161,21 +160,21 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Severity";
             // 
-            // comboBox2
+            // severityComboBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.severityComboBox.FormattingEnabled = true;
+            this.severityComboBox.Items.AddRange(new object[] {
             "Critical",
             "High",
             "Medium",
             "Low",
             "Minor",
             "None"});
-            this.comboBox2.Location = new System.Drawing.Point(234, 381);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(278, 33);
-            this.comboBox2.TabIndex = 9;
+            this.severityComboBox.Location = new System.Drawing.Point(234, 381);
+            this.severityComboBox.Margin = new System.Windows.Forms.Padding(6);
+            this.severityComboBox.Name = "severityComboBox";
+            this.severityComboBox.Size = new System.Drawing.Size(278, 33);
+            this.severityComboBox.TabIndex = 9;
             // 
             // label6
             // 
@@ -217,37 +216,38 @@
             this.label9.TabIndex = 13;
             this.label9.Text = "Actual Completion Date";
             // 
-            // dateTimePicker1
+            // dateRaisedPicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(1286, 129);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(396, 31);
-            this.dateTimePicker1.TabIndex = 15;
+            this.dateRaisedPicker.Enabled = false;
+            this.dateRaisedPicker.Location = new System.Drawing.Point(1286, 129);
+            this.dateRaisedPicker.Margin = new System.Windows.Forms.Padding(6);
+            this.dateRaisedPicker.Name = "dateRaisedPicker";
+            this.dateRaisedPicker.Size = new System.Drawing.Size(396, 31);
+            this.dateRaisedPicker.TabIndex = 15;
             // 
-            // dateTimePicker2
+            // dateAssignedPicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(1286, 202);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(396, 31);
-            this.dateTimePicker2.TabIndex = 16;
+            this.dateAssignedPicker.Location = new System.Drawing.Point(1286, 202);
+            this.dateAssignedPicker.Margin = new System.Windows.Forms.Padding(6);
+            this.dateAssignedPicker.Name = "dateAssignedPicker";
+            this.dateAssignedPicker.Size = new System.Drawing.Size(396, 31);
+            this.dateAssignedPicker.TabIndex = 16;
             // 
-            // dateTimePicker3
+            // expectedCompletionDatePicker
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(1286, 285);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(396, 31);
-            this.dateTimePicker3.TabIndex = 17;
+            this.expectedCompletionDatePicker.Location = new System.Drawing.Point(1286, 285);
+            this.expectedCompletionDatePicker.Margin = new System.Windows.Forms.Padding(6);
+            this.expectedCompletionDatePicker.Name = "expectedCompletionDatePicker";
+            this.expectedCompletionDatePicker.Size = new System.Drawing.Size(396, 31);
+            this.expectedCompletionDatePicker.TabIndex = 17;
             // 
-            // dateTimePicker4
+            // actualCompletitonDatePicker
             // 
-            this.dateTimePicker4.Location = new System.Drawing.Point(1286, 383);
-            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(396, 31);
-            this.dateTimePicker4.TabIndex = 18;
+            this.actualCompletitonDatePicker.Location = new System.Drawing.Point(1286, 383);
+            this.actualCompletitonDatePicker.Margin = new System.Windows.Forms.Padding(6);
+            this.actualCompletitonDatePicker.Name = "actualCompletitonDatePicker";
+            this.actualCompletitonDatePicker.Size = new System.Drawing.Size(396, 31);
+            this.actualCompletitonDatePicker.TabIndex = 18;
             // 
             // label10
             // 
@@ -269,206 +269,236 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Status Description";
             // 
-            // label12
+            // statusDescriptionTextBox
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1008, 469);
-            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 25);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Update Date";
+            this.statusDescriptionTextBox.Location = new System.Drawing.Point(91, 642);
+            this.statusDescriptionTextBox.Margin = new System.Windows.Forms.Padding(6);
+            this.statusDescriptionTextBox.Multiline = true;
+            this.statusDescriptionTextBox.Name = "statusDescriptionTextBox";
+            this.statusDescriptionTextBox.Size = new System.Drawing.Size(280, 273);
+            this.statusDescriptionTextBox.TabIndex = 22;
             // 
-            // textBox4
+            // statusComboBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(232, 642);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(280, 273);
-            this.textBox4.TabIndex = 22;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.statusComboBox.FormattingEnabled = true;
+            this.statusComboBox.Items.AddRange(new object[] {
             "Open",
             "Closed",
             "In Progress",
             "Hold",
             "Complete",
             "None"});
-            this.comboBox3.Location = new System.Drawing.Point(232, 469);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(280, 33);
-            this.comboBox3.TabIndex = 23;
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(1286, 469);
-            this.dateTimePicker5.Margin = new System.Windows.Forms.Padding(6);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(396, 31);
-            this.dateTimePicker5.TabIndex = 24;
+            this.statusComboBox.Location = new System.Drawing.Point(232, 469);
+            this.statusComboBox.Margin = new System.Windows.Forms.Padding(6);
+            this.statusComboBox.Name = "statusComboBox";
+            this.statusComboBox.Size = new System.Drawing.Size(280, 33);
+            this.statusComboBox.TabIndex = 23;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(662, 587);
+            this.label13.Location = new System.Drawing.Point(419, 577);
             this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(129, 25);
+            this.label13.Size = new System.Drawing.Size(223, 25);
             this.label13.TabIndex = 25;
-            this.label13.Text = "Action Items";
+            this.label13.Text = "Available Action Items";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(1012, 587);
+            this.label14.Location = new System.Drawing.Point(1018, 577);
             this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(106, 25);
+            this.label14.Size = new System.Drawing.Size(200, 25);
             this.label14.TabIndex = 26;
-            this.label14.Text = "Decisions";
+            this.label14.Text = "Available Decisions";
             // 
-            // dataGridView1
+            // associateActionItemButton
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(644, 642);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(352, 288);
-            this.dataGridView1.TabIndex = 27;
+            this.associateActionItemButton.Location = new System.Drawing.Point(543, 982);
+            this.associateActionItemButton.Margin = new System.Windows.Forms.Padding(6);
+            this.associateActionItemButton.Name = "associateActionItemButton";
+            this.associateActionItemButton.Size = new System.Drawing.Size(352, 44);
+            this.associateActionItemButton.TabIndex = 30;
+            this.associateActionItemButton.Text = "Associate Action Item";
+            this.associateActionItemButton.UseVisualStyleBackColor = true;
+            this.associateActionItemButton.Click += new System.EventHandler(this.AssociateActionItemButton_Click);
             // 
-            // Column1
+            // associateDecisionButton
             // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
+            this.associateDecisionButton.Location = new System.Drawing.Point(1074, 982);
+            this.associateDecisionButton.Margin = new System.Windows.Forms.Padding(6);
+            this.associateDecisionButton.Name = "associateDecisionButton";
+            this.associateDecisionButton.Size = new System.Drawing.Size(492, 44);
+            this.associateDecisionButton.TabIndex = 31;
+            this.associateDecisionButton.Text = "Associate Decision";
+            this.associateDecisionButton.UseVisualStyleBackColor = true;
+            this.associateDecisionButton.Click += new System.EventHandler(this.AssociateDecisionButton_Click);
             // 
-            // Column3
+            // unassociateActionItemButton
             // 
-            this.Column3.HeaderText = "Name";
-            this.Column3.Name = "Column3";
+            this.unassociateActionItemButton.Location = new System.Drawing.Point(543, 1057);
+            this.unassociateActionItemButton.Margin = new System.Windows.Forms.Padding(6);
+            this.unassociateActionItemButton.Name = "unassociateActionItemButton";
+            this.unassociateActionItemButton.Size = new System.Drawing.Size(352, 44);
+            this.unassociateActionItemButton.TabIndex = 32;
+            this.unassociateActionItemButton.Text = "Un-Associate Action Item";
+            this.unassociateActionItemButton.UseVisualStyleBackColor = true;
+            this.unassociateActionItemButton.Click += new System.EventHandler(this.UnassociateActionItemButton_Click);
             // 
-            // dataGridView2
+            // unassociateDecisionButton
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataGridView2.Location = new System.Drawing.Point(1194, 642);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(6);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(492, 288);
-            this.dataGridView2.TabIndex = 28;
+            this.unassociateDecisionButton.Location = new System.Drawing.Point(1074, 1057);
+            this.unassociateDecisionButton.Margin = new System.Windows.Forms.Padding(6);
+            this.unassociateDecisionButton.Name = "unassociateDecisionButton";
+            this.unassociateDecisionButton.Size = new System.Drawing.Size(492, 44);
+            this.unassociateDecisionButton.TabIndex = 33;
+            this.unassociateDecisionButton.Text = "Un-Associate Decision";
+            this.unassociateDecisionButton.UseVisualStyleBackColor = true;
+            this.unassociateDecisionButton.Click += new System.EventHandler(this.UnassociateDecisionButton_Click);
             // 
-            // dataGridViewTextBoxColumn1
+            // actionItemsListBox
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.actionItemsListBox.FormattingEnabled = true;
+            this.actionItemsListBox.ItemHeight = 25;
+            this.actionItemsListBox.Location = new System.Drawing.Point(424, 632);
+            this.actionItemsListBox.Name = "actionItemsListBox";
+            this.actionItemsListBox.Size = new System.Drawing.Size(253, 304);
+            this.actionItemsListBox.TabIndex = 34;
             // 
-            // dataGridViewTextBoxColumn2
+            // cancelButton
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.cancelButton.Location = new System.Drawing.Point(1642, 1015);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(150, 44);
+            this.cancelButton.TabIndex = 76;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // button1
+            // saveButton
             // 
-            this.button1.Location = new System.Drawing.Point(234, 994);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(282, 44);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.saveButton.Location = new System.Drawing.Point(1642, 1071);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(150, 44);
+            this.saveButton.TabIndex = 75;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // button2
+            // currentActionItemsListBox
             // 
-            this.button2.Location = new System.Drawing.Point(644, 992);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(352, 44);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Associate Action Item";
-            this.button2.UseVisualStyleBackColor = true;
+            this.currentActionItemsListBox.FormattingEnabled = true;
+            this.currentActionItemsListBox.ItemHeight = 25;
+            this.currentActionItemsListBox.Location = new System.Drawing.Point(720, 632);
+            this.currentActionItemsListBox.Name = "currentActionItemsListBox";
+            this.currentActionItemsListBox.Size = new System.Drawing.Size(253, 304);
+            this.currentActionItemsListBox.TabIndex = 34;
             // 
-            // button3
+            // decisionsListBox
             // 
-            this.button3.Location = new System.Drawing.Point(1194, 992);
-            this.button3.Margin = new System.Windows.Forms.Padding(6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(492, 44);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Associate Decision";
-            this.button3.UseVisualStyleBackColor = true;
+            this.decisionsListBox.FormattingEnabled = true;
+            this.decisionsListBox.ItemHeight = 25;
+            this.decisionsListBox.Location = new System.Drawing.Point(1023, 632);
+            this.decisionsListBox.Name = "decisionsListBox";
+            this.decisionsListBox.Size = new System.Drawing.Size(253, 304);
+            this.decisionsListBox.TabIndex = 34;
             // 
-            // button4
+            // currentDecisionsListBox
             // 
-            this.button4.Location = new System.Drawing.Point(644, 1067);
-            this.button4.Margin = new System.Windows.Forms.Padding(6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(352, 44);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "Un-Associate Action Item";
-            this.button4.UseVisualStyleBackColor = true;
+            this.currentDecisionsListBox.FormattingEnabled = true;
+            this.currentDecisionsListBox.ItemHeight = 25;
+            this.currentDecisionsListBox.Location = new System.Drawing.Point(1350, 632);
+            this.currentDecisionsListBox.Name = "currentDecisionsListBox";
+            this.currentDecisionsListBox.Size = new System.Drawing.Size(253, 304);
+            this.currentDecisionsListBox.TabIndex = 34;
             // 
-            // button5
+            // label15
             // 
-            this.button5.Location = new System.Drawing.Point(1194, 1067);
-            this.button5.Margin = new System.Windows.Forms.Padding(6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(492, 44);
-            this.button5.TabIndex = 33;
-            this.button5.Text = "Un-Associate Decision";
-            this.button5.UseVisualStyleBackColor = true;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(715, 577);
+            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(206, 25);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "Current Action Items";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(1345, 577);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(183, 25);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "Current Decisions";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1012, 452);
+            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(179, 25);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Last Update Date";
+            // 
+            // lastUpdatePicker
+            // 
+            this.lastUpdatePicker.Enabled = false;
+            this.lastUpdatePicker.Location = new System.Drawing.Point(1290, 448);
+            this.lastUpdatePicker.Margin = new System.Windows.Forms.Padding(6);
+            this.lastUpdatePicker.Name = "lastUpdatePicker";
+            this.lastUpdatePicker.Size = new System.Drawing.Size(396, 31);
+            this.lastUpdatePicker.TabIndex = 18;
             // 
             // NewIssue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1804, 1131);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.currentDecisionsListBox);
+            this.Controls.Add(this.decisionsListBox);
+            this.Controls.Add(this.currentActionItemsListBox);
+            this.Controls.Add(this.actionItemsListBox);
+            this.Controls.Add(this.unassociateDecisionButton);
+            this.Controls.Add(this.unassociateActionItemButton);
+            this.Controls.Add(this.associateDecisionButton);
+            this.Controls.Add(this.associateActionItemButton);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dateTimePicker5);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.statusComboBox);
+            this.Controls.Add(this.statusDescriptionTextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.lastUpdatePicker);
+            this.Controls.Add(this.actualCompletitonDatePicker);
+            this.Controls.Add(this.expectedCompletionDatePicker);
+            this.Controls.Add(this.dateAssignedPicker);
+            this.Controls.Add(this.dateRaisedPicker);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.severityComboBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.priorityComboBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "NewIssue";
             this.Text = "New Issue";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,41 +507,42 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox priorityComboBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox severityComboBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.DateTimePicker dateRaisedPicker;
+        private System.Windows.Forms.DateTimePicker dateAssignedPicker;
+        private System.Windows.Forms.DateTimePicker expectedCompletionDatePicker;
+        private System.Windows.Forms.DateTimePicker actualCompletitonDatePicker;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.TextBox statusDescriptionTextBox;
+        private System.Windows.Forms.ComboBox statusComboBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button associateActionItemButton;
+        private System.Windows.Forms.Button associateDecisionButton;
+        private System.Windows.Forms.Button unassociateActionItemButton;
+        private System.Windows.Forms.Button unassociateDecisionButton;
+        private System.Windows.Forms.ListBox actionItemsListBox;
+        private System.Windows.Forms.Button cancelButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.ListBox currentActionItemsListBox;
+        private System.Windows.Forms.ListBox decisionsListBox;
+        private System.Windows.Forms.ListBox currentDecisionsListBox;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DateTimePicker lastUpdatePicker;
     }
 }
