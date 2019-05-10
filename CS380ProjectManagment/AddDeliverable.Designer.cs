@@ -163,7 +163,7 @@
             // 
             this.tasksListBox.FormattingEnabled = true;
             this.tasksListBox.Location = new System.Drawing.Point(28, 233);
-            this.tasksListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tasksListBox.Margin = new System.Windows.Forms.Padding(2);
             this.tasksListBox.Name = "tasksListBox";
             this.tasksListBox.Size = new System.Drawing.Size(126, 160);
             this.tasksListBox.TabIndex = 32;
@@ -172,7 +172,7 @@
             // 
             this.associatedTasksListBox.FormattingEnabled = true;
             this.associatedTasksListBox.Location = new System.Drawing.Point(261, 233);
-            this.associatedTasksListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.associatedTasksListBox.Margin = new System.Windows.Forms.Padding(2);
             this.associatedTasksListBox.Name = "associatedTasksListBox";
             this.associatedTasksListBox.Size = new System.Drawing.Size(136, 160);
             this.associatedTasksListBox.TabIndex = 33;
@@ -181,7 +181,7 @@
             // 
             this.resourcesListBox.FormattingEnabled = true;
             this.resourcesListBox.Location = new System.Drawing.Point(450, 233);
-            this.resourcesListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resourcesListBox.Margin = new System.Windows.Forms.Padding(2);
             this.resourcesListBox.Name = "resourcesListBox";
             this.resourcesListBox.Size = new System.Drawing.Size(126, 160);
             this.resourcesListBox.TabIndex = 32;
@@ -190,7 +190,7 @@
             // 
             this.associatedResourcesListBox.FormattingEnabled = true;
             this.associatedResourcesListBox.Location = new System.Drawing.Point(702, 233);
-            this.associatedResourcesListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.associatedResourcesListBox.Margin = new System.Windows.Forms.Padding(2);
             this.associatedResourcesListBox.Name = "associatedResourcesListBox";
             this.associatedResourcesListBox.Size = new System.Drawing.Size(136, 160);
             this.associatedResourcesListBox.TabIndex = 33;
@@ -198,7 +198,7 @@
             // saveButton
             // 
             this.saveButton.Location = new System.Drawing.Point(858, 399);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 77;
@@ -209,7 +209,7 @@
             // cancelButton
             // 
             this.cancelButton.Location = new System.Drawing.Point(858, 370);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(2);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 78;
@@ -281,7 +281,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "AddDeliverable";
-            this.Text = "Create Deliverable";
+            this.Text = "Create New Deliverable";
             this.ResumeLayout(false);
             this.PerformLayout();
 

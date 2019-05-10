@@ -334,7 +334,7 @@
             // 
             this.actionItemsListBox.FormattingEnabled = true;
             this.actionItemsListBox.Location = new System.Drawing.Point(212, 269);
-            this.actionItemsListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.actionItemsListBox.Margin = new System.Windows.Forms.Padding(2);
             this.actionItemsListBox.Name = "actionItemsListBox";
             this.actionItemsListBox.Size = new System.Drawing.Size(128, 160);
             this.actionItemsListBox.TabIndex = 34;
@@ -342,7 +342,7 @@
             // cancelButton
             // 
             this.cancelButton.Location = new System.Drawing.Point(821, 468);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(2);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 76;
@@ -353,7 +353,7 @@
             // saveButton
             // 
             this.saveButton.Location = new System.Drawing.Point(821, 497);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 75;
@@ -365,7 +365,7 @@
             // 
             this.currentActionItemsListBox.FormattingEnabled = true;
             this.currentActionItemsListBox.Location = new System.Drawing.Point(360, 269);
-            this.currentActionItemsListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.currentActionItemsListBox.Margin = new System.Windows.Forms.Padding(2);
             this.currentActionItemsListBox.Name = "currentActionItemsListBox";
             this.currentActionItemsListBox.Size = new System.Drawing.Size(128, 160);
             this.currentActionItemsListBox.TabIndex = 34;
@@ -374,7 +374,7 @@
             // 
             this.decisionsListBox.FormattingEnabled = true;
             this.decisionsListBox.Location = new System.Drawing.Point(512, 269);
-            this.decisionsListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.decisionsListBox.Margin = new System.Windows.Forms.Padding(2);
             this.decisionsListBox.Name = "decisionsListBox";
             this.decisionsListBox.Size = new System.Drawing.Size(128, 160);
             this.decisionsListBox.TabIndex = 34;
@@ -383,7 +383,7 @@
             // 
             this.currentDecisionsListBox.FormattingEnabled = true;
             this.currentDecisionsListBox.Location = new System.Drawing.Point(675, 269);
-            this.currentDecisionsListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.currentDecisionsListBox.Margin = new System.Windows.Forms.Padding(2);
             this.currentDecisionsListBox.Name = "currentDecisionsListBox";
             this.currentDecisionsListBox.Size = new System.Drawing.Size(128, 160);
             this.currentDecisionsListBox.TabIndex = 34;
@@ -467,7 +467,7 @@
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.label1);
             this.Name = "NewIssue";
-            this.Text = "New Issue";
+            this.Text = "Create New Issue";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -453,7 +453,7 @@
             // 
             this.startToFinishListBox.FormattingEnabled = true;
             this.startToFinishListBox.Location = new System.Drawing.Point(594, 322);
-            this.startToFinishListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.startToFinishListBox.Margin = new System.Windows.Forms.Padding(2);
             this.startToFinishListBox.Name = "startToFinishListBox";
             this.startToFinishListBox.Size = new System.Drawing.Size(84, 95);
             this.startToFinishListBox.TabIndex = 45;
@@ -461,7 +461,7 @@
             // removeStartToFinishButton
             // 
             this.removeStartToFinishButton.Location = new System.Drawing.Point(594, 452);
-            this.removeStartToFinishButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.removeStartToFinishButton.Margin = new System.Windows.Forms.Padding(2);
             this.removeStartToFinishButton.Name = "removeStartToFinishButton";
             this.removeStartToFinishButton.Size = new System.Drawing.Size(84, 23);
             this.removeStartToFinishButton.TabIndex = 44;
@@ -472,7 +472,7 @@
             // addStartToFinishButton
             // 
             this.addStartToFinishButton.Location = new System.Drawing.Point(594, 423);
-            this.addStartToFinishButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addStartToFinishButton.Margin = new System.Windows.Forms.Padding(2);
             this.addStartToFinishButton.Name = "addStartToFinishButton";
             this.addStartToFinishButton.Size = new System.Drawing.Size(84, 23);
             this.addStartToFinishButton.TabIndex = 43;
@@ -483,7 +483,7 @@
             // saveButton
             // 
             this.saveButton.Location = new System.Drawing.Point(692, 463);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 73;
@@ -494,7 +494,7 @@
             // cancelButton
             // 
             this.cancelButton.Location = new System.Drawing.Point(692, 434);
-            this.cancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(2);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 74;
@@ -555,7 +555,7 @@
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.label1);
             this.Name = "TaskCreationForm";
-            this.Text = "Task Creation Form";
+            this.Text = "Create New Task";
             ((System.ComponentModel.ISupportInitialize)(this.expectedDuration)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -55,7 +55,7 @@
             // idTextBox
             // 
             this.idTextBox.Location = new System.Drawing.Point(99, 46);
-            this.idTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.idTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(167, 20);
             this.idTextBox.TabIndex = 2;
@@ -73,7 +73,7 @@
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(99, 75);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(167, 20);
             this.nameTextBox.TabIndex = 1;
@@ -185,7 +185,7 @@
             "Hold",
             "Complete"});
             this.statusComboBox.Location = new System.Drawing.Point(99, 346);
-            this.statusComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.statusComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.statusComboBox.Name = "statusComboBox";
             this.statusComboBox.Size = new System.Drawing.Size(120, 21);
             this.statusComboBox.TabIndex = 23;
@@ -203,7 +203,7 @@
             // ConfigureStatusButton
             // 
             this.ConfigureStatusButton.Location = new System.Drawing.Point(243, 336);
-            this.ConfigureStatusButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ConfigureStatusButton.Margin = new System.Windows.Forms.Padding(2);
             this.ConfigureStatusButton.Name = "ConfigureStatusButton";
             this.ConfigureStatusButton.Size = new System.Drawing.Size(147, 24);
             this.ConfigureStatusButton.TabIndex = 25;
@@ -224,7 +224,7 @@
             // statusDescriptionTextBox
             // 
             this.statusDescriptionTextBox.Location = new System.Drawing.Point(130, 404);
-            this.statusDescriptionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.statusDescriptionTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.statusDescriptionTextBox.Name = "statusDescriptionTextBox";
             this.statusDescriptionTextBox.Size = new System.Drawing.Size(214, 20);
             this.statusDescriptionTextBox.TabIndex = 27;
@@ -286,9 +286,9 @@
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.expectedCompletion);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddActionItem";
-            this.Text = "New Action Item";
+            this.Text = "Create New Action Item";
             this.ResumeLayout(false);
             this.PerformLayout();
 

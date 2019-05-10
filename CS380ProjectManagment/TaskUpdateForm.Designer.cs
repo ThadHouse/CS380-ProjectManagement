@@ -893,7 +893,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.milestoneCheckBox);
             this.Name = "TaskUpdateForm";
-            this.Text = "TaskUpdateForm";
+            this.Text = "Update Task";
             ((System.ComponentModel.ISupportInitialize)(this.expectedDuration)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
