@@ -43,6 +43,7 @@ namespace CS380ProjectManagment
             resourceData.Name = nameTextBox.Text;
             resourceData.Title = titleTextBox.Text;
             Database.Save();
+            this.Close();
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

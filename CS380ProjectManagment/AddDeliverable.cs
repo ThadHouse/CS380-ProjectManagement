@@ -88,6 +88,7 @@ namespace CS380ProjectManagment
                 deliverableData.AddTask(name);
             }
             Database.Save();
+            this.Close();
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

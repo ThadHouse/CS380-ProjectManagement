@@ -180,7 +180,30 @@ namespace CS380ProjectManagment
         }
     }
 
-    public class DecisionData : Base {
+    public class DecisionData : Base
+    {
+        public string Priority { get; set; }
+        public string Impact { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime DateNeeded { get; set; }
+        public DateTime DateMade { get; set; }
+        public Guid DecisionMaker { get; set; }
+        public DateTime ExpectedCompletionDate { get; set; }
+        public DateTime ActualCompletionDate { get; set; }
+        public DateTime UpdateDate { get; set; }
+        public string Status { get; set; }
+        public string StatusDescription { get; set; }
+        public List<string> MeetingNotes { get; set; } = new List<string>();
+        public List<Guid> AssociatedTasks { get; set; } = new List<Guid>();
+
+        public void AddTask(string name)
+        {
+            var res = Database.Instance.Tasks.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                AssociatedTasks.Add(res.Id);
+            }
+        }
     }
 
     public class Database
