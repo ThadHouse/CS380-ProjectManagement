@@ -44,11 +44,11 @@ namespace CS380ProjectManagment
             actionItemsPage.Controls.Add(actionItemsPanel);
             actionItemsPanel.Dock = DockStyle.Fill;
 
-            var decisionsPanel = new BasePanel<DecisionData>(decisionsPage.Text, () => Database.Instance.Decisions);
+            var decisionsPanel = new BasePanel<DecisionData>(decisionsPage.Text, () => Database.Instance.Decisions, () => new AddDecision(null));
             decisionsPage.Controls.Add(decisionsPanel);
             decisionsPanel.Dock = DockStyle.Fill;
 
-            var resourcesPanel = new BasePanel<ResourceData>(resourcesTab.Text, () => Database.Instance.Resources);
+            var resourcesPanel = new BasePanel<ResourceData>(resourcesTab.Text, () => Database.Instance.Resources, () => new AddResource(null));
             resourcesTab.Controls.Add(resourcesPanel);
             resourcesPanel.Dock = DockStyle.Fill;
 

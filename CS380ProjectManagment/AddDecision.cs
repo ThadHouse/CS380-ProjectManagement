@@ -12,7 +12,7 @@ namespace CS380ProjectManagment
 {
     public partial class AddDecision : Form
     {
-        public AddDecision()
+        public AddDecision(DecisionData decisionData)
         {
             InitializeComponent();
         }
