@@ -54,10 +54,10 @@
             this.projectManagementTabControl.Controls.Add(this.issuesTab);
             this.projectManagementTabControl.Controls.Add(this.decisionsPage);
             this.projectManagementTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.projectManagementTabControl.Location = new System.Drawing.Point(0, 42);
+            this.projectManagementTabControl.Location = new System.Drawing.Point(0, 40);
             this.projectManagementTabControl.Name = "projectManagementTabControl";
             this.projectManagementTabControl.SelectedIndex = 0;
-            this.projectManagementTabControl.Size = new System.Drawing.Size(974, 894);
+            this.projectManagementTabControl.Size = new System.Drawing.Size(974, 896);
             this.projectManagementTabControl.TabIndex = 0;
             // 
             // TasksPage
@@ -65,7 +65,7 @@
             this.TasksPage.Location = new System.Drawing.Point(8, 39);
             this.TasksPage.Name = "TasksPage";
             this.TasksPage.Padding = new System.Windows.Forms.Padding(3);
-            this.TasksPage.Size = new System.Drawing.Size(958, 847);
+            this.TasksPage.Size = new System.Drawing.Size(958, 849);
             this.TasksPage.TabIndex = 0;
             this.TasksPage.Text = "Tasks";
             this.TasksPage.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             this.actionItemsPage.Location = new System.Drawing.Point(8, 39);
             this.actionItemsPage.Name = "actionItemsPage";
             this.actionItemsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.actionItemsPage.Size = new System.Drawing.Size(958, 847);
+            this.actionItemsPage.Size = new System.Drawing.Size(958, 849);
             this.actionItemsPage.TabIndex = 1;
             this.actionItemsPage.Text = "Action Items";
             this.actionItemsPage.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(974, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(974, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 

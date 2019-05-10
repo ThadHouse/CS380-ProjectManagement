@@ -89,7 +89,7 @@ namespace CS380ProjectManagment
         private void NewTaskToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var basePanel = TasksPage.Controls.OfType<BasePanel<TaskData>>().First();
-            basePanel.CreateButton.PerformClick();
+            basePanel.CreateButtonHandler(basePanel.CreateButton, EventArgs.Empty);
         }
     }
 }

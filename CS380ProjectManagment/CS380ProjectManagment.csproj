@@ -67,6 +67,12 @@
       <DependentUpon>DeleteGC.cs</DependentUpon>
     </Compile>
     <Compile Include="Extensions.cs" />
+    <Compile Include="AddDecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDecision.designer.cs">
+      <DependentUpon>AddDecision.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoadGC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteGC.resx">
       <DependentUpon>DeleteGC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDecision.resx">
+      <DependentUpon>AddDecision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoadGC.resx">
       <DependentUpon>LoadGC.cs</DependentUpon>

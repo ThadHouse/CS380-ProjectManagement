@@ -16,6 +16,31 @@ namespace CS380ProjectManagment
         public Button UpdateButton { get; }
         public Button DeleteButton { get; }
 
+        private Func<Form> createForm;
+        private Func<List<T>> getItemList;
+
+        public void CreateButtonHandler(object sender, EventArgs e)
+        {
+            if (createForm == null)
+            {
+                ProjectManagement.NotImplementedMessageBox();
+                return;
+            }
+            Form newForm = createForm();
+            newForm.FormClosed += (o2, e2) =>
+            {
+                var items = getItemList?.Invoke();
+                if (items == null) return;
+                valuesListBox.Items.Clear();
+
+                foreach (string nm in items.Select(x => x.Name))
+                {
+                    valuesListBox.Items.Add(nm);
+                }
+            };
+            newForm.Show();
+        }
+
         public BasePanel(string name, Func<List<T>> getItemList, Func<Form> createForm = null, Func<string, Form> updateForm = null)
         {
             InitializeComponent();
@@ -41,27 +66,10 @@ namespace CS380ProjectManagment
             this.updateButton.Text = $"Update Selected {nameWithoutS}";
             this.deleteButton.Text = $"Delete Selected {nameWithoutS}";
 
-            this.createButton.Click += (o, e) =>
-            {
-                if (createForm == null)
-                {
-                    ProjectManagement.NotImplementedMessageBox();
-                    return;
-                }
-                Form newForm = createForm();
-                newForm.FormClosed += (o2, e2) =>
-                {
-                    var items = getItemList?.Invoke();
-                    if (items == null) return;
-                    valuesListBox.Items.Clear();
-                    
-                    foreach (string nm in items.Select(x => x.Name))
-                    {
-                        valuesListBox.Items.Add(nm);
-                    }
-                };
-                newForm.Show();
-            };
+            this.createForm = createForm;
+            this.getItemList = getItemList;
+
+            this.createButton.Click += CreateButtonHandler;
 
             this.updateButton.Click += (o, e) =>
             {

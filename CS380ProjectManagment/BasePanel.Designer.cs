@@ -45,7 +45,7 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(502, 622);
+            this.deleteButton.Location = new System.Drawing.Point(502, 511);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(419, 75);
             this.deleteButton.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(502, 488);
+            this.updateButton.Location = new System.Drawing.Point(502, 377);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(419, 71);
             this.updateButton.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.valuesListBox.ItemHeight = 25;
             this.valuesListBox.Location = new System.Drawing.Point(50, 156);
             this.valuesListBox.Name = "valuesListBox";
-            this.valuesListBox.Size = new System.Drawing.Size(400, 604);
+            this.valuesListBox.Size = new System.Drawing.Size(400, 554);
             this.valuesListBox.TabIndex = 1;
             // 
             // BasePanel
