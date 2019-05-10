@@ -98,12 +98,52 @@ namespace CS380ProjectManagment
 
     public class ResourceData : Base
     {
-
+        public string Title { get; set; }
     }
 
     public class DeliverableData : Base
     {
+        public DateTime DueDate;
 
+        public List<Guid> AssociatedTasks { get; set; } = new List<Guid>();
+
+        public void AddTask(string name)
+        {
+            var res = Database.Instance.Tasks.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                AssociatedTasks.Add(res.Id);
+            }
+        }
+
+        public void RemoveTask(string name)
+        {
+            var res = Database.Instance.Tasks.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                AssociatedTasks.Remove(res.Id);
+            }
+        }
+
+        public List<Guid> AssociatedResources { get; set; } = new List<Guid>();
+
+        public void AddResource(string name)
+        {
+            var res = Database.Instance.Resources.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                AssociatedResources.Add(res.Id);
+            }
+        }
+
+        public void RemoveResource(string name)
+        {
+            var res = Database.Instance.Resources.Where(x => x.Name == name).FirstOrDefault();
+            if (res != null)
+            {
+                AssociatedResources.Remove(res.Id);
+            }
+        }
     }
 
     public class IssueData : Base

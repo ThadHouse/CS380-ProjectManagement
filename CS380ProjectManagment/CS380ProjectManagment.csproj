@@ -53,6 +53,18 @@
     <Compile Include="ActionItems\StatusConfigure.Designer.cs">
       <DependentUpon>StatusConfigure.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddDeliverable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDeliverable.Designer.cs">
+      <DependentUpon>AddDeliverable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddResource.Designer.cs">
+      <DependentUpon>AddResource.cs</DependentUpon>
+    </Compile>
     <Compile Include="BasePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,6 +143,12 @@
     </Compile>
     <EmbeddedResource Include="ActionItems\StatusConfigure.resx">
       <DependentUpon>StatusConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDeliverable.resx">
+      <DependentUpon>AddDeliverable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddResource.resx">
+      <DependentUpon>AddResource.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BasePanel.resx">
       <DependentUpon>BasePanel.cs</DependentUpon>

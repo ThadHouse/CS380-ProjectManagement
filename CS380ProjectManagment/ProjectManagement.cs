@@ -52,7 +52,16 @@ namespace CS380ProjectManagment
             resourcesTab.Controls.Add(resourcesPanel);
             resourcesPanel.Dock = DockStyle.Fill;
 
-            var deliverablesPanel = new BasePanel<DeliverableData>(deliverablesTab.Text, () => Database.Instance.Deliverables);
+            var deliverablesPanel = new BasePanel<DeliverableData>(deliverablesTab.Text, () => Database.Instance.Deliverables,
+                    () => new AddDeliverable(null), (item) =>
+                    {
+                        var deliverable = Database.Instance.Deliverables.Where(x => x.Name == item).FirstOrDefault();
+                        if (deliverable != null)
+                        {
+                            return new AddDeliverable(deliverable);
+                        }
+                        return null;
+                    });
             deliverablesTab.Controls.Add(deliverablesPanel);
             deliverablesPanel.Dock = DockStyle.Fill;
 
