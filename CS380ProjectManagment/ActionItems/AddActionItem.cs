@@ -18,6 +18,8 @@ namespace CS380ProjectManagment.ActionItems
         public AddActionItem(ActionItemData itemData)
         {
             InitializeComponent();
+            this.AddSaveHandler(saveButton);
+            this.AddCloseHandler(cancelButton);
             if (itemData != null)
             {
                 this.Text = "Update Action Item";

@@ -11,7 +11,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
+    <Deterministic>false</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -66,6 +66,7 @@
     <Compile Include="DeleteGC.Designer.cs">
       <DependentUpon>DeleteGC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Extensions.cs" />
     <Compile Include="LoadGC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +117,12 @@
     <Compile Include="TaskUpdateForm.Designer.cs">
       <DependentUpon>TaskUpdateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UtilForms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UtilForms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ActionItems\StatusConfigure.resx">
       <DependentUpon>StatusConfigure.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TaskUpdateForm.resx">
       <DependentUpon>TaskUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilForms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

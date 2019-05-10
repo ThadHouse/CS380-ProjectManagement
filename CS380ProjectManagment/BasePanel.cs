@@ -12,10 +12,16 @@ namespace CS380ProjectManagment
 {
     public partial class BasePanel<T> : UserControl where T : Base
     {
+        public Button CreateButton { get; }
+        public Button UpdateButton { get; }
+        public Button DeleteButton { get; }
 
         public BasePanel(string name, Func<List<T>> getItemList, Func<Form> createForm = null, Func<string, Form> updateForm = null)
         {
             InitializeComponent();
+            CreateButton = createButton;
+            UpdateButton = updateButton;
+            DeleteButton = deleteButton;
             var list = getItemList?.Invoke();
             if (list != null)
             {
@@ -32,8 +38,8 @@ namespace CS380ProjectManagment
                 nameWithoutS = name;
             }
             this.createButton.Text = $"Create New {nameWithoutS}";
-            this.UpdateButton.Text = $"Update Selected {nameWithoutS}";
-            this.DeleteButton.Text = $"Delete Selected {nameWithoutS}";
+            this.updateButton.Text = $"Update Selected {nameWithoutS}";
+            this.deleteButton.Text = $"Delete Selected {nameWithoutS}";
 
             this.createButton.Click += (o, e) =>
             {
@@ -57,7 +63,7 @@ namespace CS380ProjectManagment
                 newForm.Show();
             };
 
-            this.UpdateButton.Click += (o, e) =>
+            this.updateButton.Click += (o, e) =>
             {
                 if (updateForm == null)
                 {
@@ -84,7 +90,7 @@ namespace CS380ProjectManagment
                 newForm.Show();
             };
 
-            this.DeleteButton.Click += (o, e) =>
+            this.deleteButton.Click += (o, e) =>
             {
                 var items = getItemList?.Invoke();
                 if (items == null) return;

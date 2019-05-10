@@ -1,4 +1,5 @@
 ﻿using CS380ProjectManagment.ActionItems;
+using CS380ProjectManagment.UtilForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -72,6 +73,23 @@ namespace CS380ProjectManagment
         public static void NotImplementedMessageBox()
         {
             MessageBox.Show("This functionality is not currently implemented");
+        }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutForm about = new AboutForm();
+            about.Show();
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void NewTaskToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var basePanel = TasksPage.Controls.OfType<BasePanel<TaskData>>().First();
+            basePanel.CreateButton.PerformClick();
         }
     }
 }
