@@ -37,10 +37,10 @@
             this.decisionsPage = new System.Windows.Forms.TabPage();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projectManagementTabControl.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,68 +54,75 @@
             this.projectManagementTabControl.Controls.Add(this.issuesTab);
             this.projectManagementTabControl.Controls.Add(this.decisionsPage);
             this.projectManagementTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.projectManagementTabControl.Location = new System.Drawing.Point(0, 40);
+            this.projectManagementTabControl.Location = new System.Drawing.Point(0, 24);
+            this.projectManagementTabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.projectManagementTabControl.Name = "projectManagementTabControl";
             this.projectManagementTabControl.SelectedIndex = 0;
-            this.projectManagementTabControl.Size = new System.Drawing.Size(974, 896);
+            this.projectManagementTabControl.Size = new System.Drawing.Size(487, 421);
             this.projectManagementTabControl.TabIndex = 0;
             // 
             // TasksPage
             // 
-            this.TasksPage.Location = new System.Drawing.Point(8, 39);
+            this.TasksPage.Location = new System.Drawing.Point(4, 22);
+            this.TasksPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TasksPage.Name = "TasksPage";
-            this.TasksPage.Padding = new System.Windows.Forms.Padding(3);
-            this.TasksPage.Size = new System.Drawing.Size(958, 849);
+            this.TasksPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TasksPage.Size = new System.Drawing.Size(479, 395);
             this.TasksPage.TabIndex = 0;
             this.TasksPage.Text = "Tasks";
             this.TasksPage.UseVisualStyleBackColor = true;
             // 
             // actionItemsPage
             // 
-            this.actionItemsPage.Location = new System.Drawing.Point(8, 39);
+            this.actionItemsPage.Location = new System.Drawing.Point(4, 22);
+            this.actionItemsPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.actionItemsPage.Name = "actionItemsPage";
-            this.actionItemsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.actionItemsPage.Size = new System.Drawing.Size(958, 849);
+            this.actionItemsPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.actionItemsPage.Size = new System.Drawing.Size(479, 440);
             this.actionItemsPage.TabIndex = 1;
             this.actionItemsPage.Text = "Action Items";
             this.actionItemsPage.UseVisualStyleBackColor = true;
             // 
             // deliverablesTab
             // 
-            this.deliverablesTab.Location = new System.Drawing.Point(8, 39);
+            this.deliverablesTab.Location = new System.Drawing.Point(4, 22);
+            this.deliverablesTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deliverablesTab.Name = "deliverablesTab";
-            this.deliverablesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.deliverablesTab.Size = new System.Drawing.Size(958, 847);
+            this.deliverablesTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deliverablesTab.Size = new System.Drawing.Size(479, 440);
             this.deliverablesTab.TabIndex = 2;
             this.deliverablesTab.Text = "Deliverables";
             this.deliverablesTab.UseVisualStyleBackColor = true;
             // 
             // resourcesTab
             // 
-            this.resourcesTab.Location = new System.Drawing.Point(8, 39);
+            this.resourcesTab.Location = new System.Drawing.Point(4, 22);
+            this.resourcesTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resourcesTab.Name = "resourcesTab";
-            this.resourcesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.resourcesTab.Size = new System.Drawing.Size(958, 847);
+            this.resourcesTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.resourcesTab.Size = new System.Drawing.Size(479, 440);
             this.resourcesTab.TabIndex = 3;
             this.resourcesTab.Text = "Resources";
             this.resourcesTab.UseVisualStyleBackColor = true;
             // 
             // issuesTab
             // 
-            this.issuesTab.Location = new System.Drawing.Point(8, 39);
+            this.issuesTab.Location = new System.Drawing.Point(4, 22);
+            this.issuesTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.issuesTab.Name = "issuesTab";
-            this.issuesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.issuesTab.Size = new System.Drawing.Size(958, 847);
+            this.issuesTab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.issuesTab.Size = new System.Drawing.Size(479, 440);
             this.issuesTab.TabIndex = 4;
             this.issuesTab.Text = "Issues";
             this.issuesTab.UseVisualStyleBackColor = true;
             // 
             // decisionsPage
             // 
-            this.decisionsPage.Location = new System.Drawing.Point(8, 39);
+            this.decisionsPage.Location = new System.Drawing.Point(4, 22);
+            this.decisionsPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.decisionsPage.Name = "decisionsPage";
-            this.decisionsPage.Padding = new System.Windows.Forms.Padding(3);
-            this.decisionsPage.Size = new System.Drawing.Size(958, 847);
+            this.decisionsPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.decisionsPage.Size = new System.Drawing.Size(479, 440);
             this.decisionsPage.TabIndex = 5;
             this.decisionsPage.Text = "Decisions";
             this.decisionsPage.UseVisualStyleBackColor = true;
@@ -128,7 +135,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(974, 40);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(487, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -138,29 +146,14 @@
             this.newTaskToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "File";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 38);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(179, 38);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // newTaskToolStripMenuItem
             // 
             this.newTaskToolStripMenuItem.Name = "newTaskToolStripMenuItem";
             this.newTaskToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newTaskToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.newTaskToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.newTaskToolStripMenuItem.Text = "New Task";
             this.newTaskToolStripMenuItem.Click += new System.EventHandler(this.NewTaskToolStripMenuItem_Click);
             // 
@@ -168,19 +161,35 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            // 
             // ProjectManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 936);
+            this.ClientSize = new System.Drawing.Size(487, 445);
             this.Controls.Add(this.projectManagementTabControl);
             this.Controls.Add(this.menuStrip1);
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProjectManagement";
             this.Text = "Project Management";
             this.projectManagementTabControl.ResumeLayout(false);

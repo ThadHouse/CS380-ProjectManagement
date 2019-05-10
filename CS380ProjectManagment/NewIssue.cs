@@ -19,7 +19,6 @@ namespace CS380ProjectManagment
             InitializeComponent();
             this.AddSaveHandler(saveButton);
             this.AddCloseHandler(cancelButton);
-            this.Size = new Size(this.Size.Width, (int)(this.Size.Height * 1.15));
 
             lastUpdatePicker.Value = DateTime.Now;
 

@@ -19,7 +19,6 @@ namespace CS380ProjectManagment
             InitializeComponent();
             this.AddSaveHandler(saveButton);
             this.AddCloseHandler(cancelButton);
-            this.Size = new Size(this.Size.Width, (int)(this.Size.Height * 1.35));
 
             availableResourcesListBox.Items.Clear();
             foreach (string res in Database.Instance.Resources.Select(x => x.Name))
