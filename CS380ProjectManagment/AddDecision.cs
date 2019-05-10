@@ -21,6 +21,7 @@ namespace CS380ProjectManagment
             this.AddCloseHandler(cancelButton);
 
             decisionMakerComboBox.Items.Clear();
+            decisionMakerComboBox.Items.Add("");
             foreach (string res in Database.Instance.Resources.Select(x => x.Name))
             {
                 decisionMakerComboBox.Items.Add(res);
@@ -115,12 +116,26 @@ namespace CS380ProjectManagment
 
         private void AddTaskButton_Click(object sender, EventArgs e)
         {
+            if (tasksListBox.SelectedItem == null)
+            {
+                MessageBox.Show("Must select a Task");
+                return;
+            }
 
+            string selected = tasksListBox.SelectedItem as string;
+            associatedTasksListBox.Items.Add(selected);
         }
 
         private void RemoveTaskButton_Click(object sender, EventArgs e)
         {
+            if (associatedTasksListBox.SelectedItem == null)
+            {
+                MessageBox.Show("Must select a Task");
+                return;
+            }
 
+            string selected = associatedTasksListBox.SelectedItem as string;
+            associatedTasksListBox.Items.Remove(selected);
         }
     }
 }
