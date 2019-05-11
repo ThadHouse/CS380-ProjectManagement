@@ -62,9 +62,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(72, 257);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 25);
+            this.label2.Size = new System.Drawing.Size(272, 25);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Team Members";
+            this.label2.Text = "Gold Team Team Members";
             // 
             // label3
             // 
@@ -80,45 +80,45 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(72, 311);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 25);
+            this.label4.Size = new System.Drawing.Size(172, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "label3";
+            this.label4.Text = "Daniel Cardenas";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(72, 336);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 25);
+            this.label5.Size = new System.Drawing.Size(132, 25);
             this.label5.TabIndex = 3;
-            this.label5.Text = "label3";
+            this.label5.Text = "Marlow Cruz";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(72, 361);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 25);
+            this.label6.Size = new System.Drawing.Size(128, 25);
             this.label6.TabIndex = 3;
-            this.label6.Text = "label3";
+            this.label6.Text = "Tracy Smart";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(72, 386);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 25);
+            this.label7.Size = new System.Drawing.Size(183, 25);
             this.label7.TabIndex = 3;
-            this.label7.Text = "label3";
+            this.label7.Text = "Abraham Santosa";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(72, 411);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 25);
+            this.label8.Size = new System.Drawing.Size(111, 25);
             this.label8.TabIndex = 3;
-            this.label8.Text = "label3";
+            this.label8.Text = "Jake Lyon";
             // 
             // AboutForm
             // 

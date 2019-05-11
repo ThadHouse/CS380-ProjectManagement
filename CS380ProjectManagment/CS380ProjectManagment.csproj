@@ -141,6 +141,12 @@
     <Compile Include="UtilForms\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UtilForms\KeyboardShortcuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UtilForms\KeyboardShortcuts.Designer.cs">
+      <DependentUpon>KeyboardShortcuts.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ActionItems\StatusConfigure.resx">
       <DependentUpon>StatusConfigure.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UtilForms\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UtilForms\KeyboardShortcuts.resx">
+      <DependentUpon>KeyboardShortcuts.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

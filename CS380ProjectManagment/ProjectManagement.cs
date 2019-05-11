@@ -118,5 +118,11 @@ namespace CS380ProjectManagment
             var basePanel = TasksPage.Controls.OfType<BasePanel<TaskData>>().First();
             basePanel.CreateButtonHandler(basePanel.CreateButton, EventArgs.Empty);
         }
+
+        private void ShortcutDescriptionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var shortcuts = new KeyboardShortcuts();
+            shortcuts.Show();
+        }
     }
 }

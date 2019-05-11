@@ -71,6 +71,15 @@ namespace CS380ProjectManagment
 
             this.createButton.Click += CreateButtonHandler;
 
+            valuesListBox.MouseDoubleClick += (o, e) =>
+            {
+                int selectedIndex = valuesListBox.IndexFromPoint(e.Location);
+                if (selectedIndex != ListBox.NoMatches)
+                {
+                    updateButton.PerformClick();
+                }
+            };
+
             this.updateButton.Click += (o, e) =>
             {
                 if (updateForm == null)
@@ -81,7 +90,7 @@ namespace CS380ProjectManagment
                 Form newForm = updateForm(this.valuesListBox.SelectedItem as string);
                 if (newForm == null)
                 {
-                    MessageBox.Show("Item does not exist");
+                    MessageBox.Show("Must Select an Item to Update");
                     return;
                 }
                 newForm.FormClosed += (o2, e2) =>

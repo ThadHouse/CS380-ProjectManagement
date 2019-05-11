@@ -1,0 +1,167 @@
+{
+  "ActionItems": [
+    {
+      "Resource": "1b42059b-e715-44eb-907a-35fb8951dd37",
+      "ExpectedCompletionDate": "2019-05-16T18:31:10",
+      "Status": "Open",
+      "StatusDescription": "Initial Creation",
+      "Name": "Create Project",
+      "Id": "35e69e58-8b15-4ac4-8852-e19b1c4f9d1e",
+      "Description": "Create the project to build the GUI prototype with."
+    }
+  ],
+  "Tasks": [
+    {
+      "IsMilestone": false,
+      "Resources": [
+        "5dbfb2af-6baa-41fa-b119-eb21d4ca0c33"
+      ],
+      "ExpectedStartDate": "2019-05-10T18:31:54.5501115-07:00",
+      "ExpectedEndDate": "2019-05-10T18:31:54.5471431-07:00",
+      "ExpectedDuration": 0,
+      "PredecessorTasks": [],
+      "StartToFinishTasks": [],
+      "StartToStartTasks": [],
+      "FinishToFinishTasks": [
+        "106752be-6b1a-48e1-bfd1-b54f37784938"
+      ],
+      "FinishToStartTasks": [],
+      "Issues": [],
+      "Name": "Assign Users",
+      "Id": "68f06092-23d0-4db3-ad72-d5ccf9865079",
+      "Description": "Assign the user to create each form."
+    },
+    {
+      "IsMilestone": false,
+      "Resources": [
+        "67f0508e-625b-4c9a-8a28-af632dcfa70f",
+        "0b68e7aa-8c22-49b9-800b-7b0c8fd3d9dd",
+        "5dbfb2af-6baa-41fa-b119-eb21d4ca0c33",
+        "fc1fc542-85b5-47ea-ab2a-4fc350d62e40",
+        "0b522fe0-8264-4025-943c-e9bded874223",
+        "1b42059b-e715-44eb-907a-35fb8951dd37"
+      ],
+      "ExpectedStartDate": "2019-05-18T18:32:25",
+      "ExpectedEndDate": "2019-05-24T18:32:25",
+      "ExpectedDuration": 6,
+      "PredecessorTasks": [
+        "68f06092-23d0-4db3-ad72-d5ccf9865079"
+      ],
+      "StartToFinishTasks": [],
+      "StartToStartTasks": [],
+      "FinishToFinishTasks": [],
+      "FinishToStartTasks": [],
+      "Issues": [],
+      "Name": "Learn C#",
+      "Id": "106752be-6b1a-48e1-bfd1-b54f37784938",
+      "Description": "Learn how to use C#"
+    }
+  ],
+  "Resources": [
+    {
+      "Title": "Debug Guru",
+      "Name": "Thad House",
+      "Id": "1b42059b-e715-44eb-907a-35fb8951dd37",
+      "Description": ""
+    },
+    {
+      "Title": "Sr. Developer",
+      "Name": "Daniel Cardenas",
+      "Id": "0b522fe0-8264-4025-943c-e9bded874223",
+      "Description": ""
+    },
+    {
+      "Title": "Sr. Developer",
+      "Name": "Marlow Cruz",
+      "Id": "fc1fc542-85b5-47ea-ab2a-4fc350d62e40",
+      "Description": ""
+    },
+    {
+      "Title": "Sr. Developer",
+      "Name": "Tracy Smart",
+      "Id": "5dbfb2af-6baa-41fa-b119-eb21d4ca0c33",
+      "Description": ""
+    },
+    {
+      "Title": "Sr. Developer",
+      "Name": "Abraham Santosa",
+      "Id": "67f0508e-625b-4c9a-8a28-af632dcfa70f",
+      "Description": ""
+    },
+    {
+      "Title": "Sr. Developer",
+      "Name": "Jake Lyon",
+      "Id": "0b68e7aa-8c22-49b9-800b-7b0c8fd3d9dd",
+      "Description": ""
+    }
+  ],
+  "Deliverables": [
+    {
+      "DueDate": "2019-05-30T18:30:23",
+      "AssociatedTasks": [
+        "106752be-6b1a-48e1-bfd1-b54f37784938"
+      ],
+      "AssociatedResources": [
+        "1b42059b-e715-44eb-907a-35fb8951dd37",
+        "0b68e7aa-8c22-49b9-800b-7b0c8fd3d9dd"
+      ],
+      "Name": "GUI Prototype",
+      "Id": "7000022b-3aa8-41e8-ae75-495f29dd0ffb",
+      "Description": "The GUI prototype for the system"
+    },
+    {
+      "DueDate": "2019-09-18T18:30:45",
+      "AssociatedTasks": [],
+      "AssociatedResources": [
+        "fc1fc542-85b5-47ea-ab2a-4fc350d62e40",
+        "5dbfb2af-6baa-41fa-b119-eb21d4ca0c33"
+      ],
+      "Name": "Final Executable",
+      "Id": "918aabdc-2c16-4721-8517-08890b3e9eb8",
+      "Description": "A final deliverable executable to the client"
+    }
+  ],
+  "Issues": [
+    {
+      "Priority": "High",
+      "Severity": "Critical",
+      "Status": "In Progress",
+      "StatusDescription": "We need something to do.",
+      "DateRaised": "2019-05-10T18:27:45.3674785-07:00",
+      "DateAssigned": "2019-05-11T18:27:45",
+      "ExpectedCompletionDate": "2019-05-24T18:27:45",
+      "ActualCompletionDate": "2019-05-10T18:27:45.403478-07:00",
+      "LastUpdateDate": "2019-05-10T18:28:36.6164316-07:00",
+      "ActionItems": [],
+      "Decisions": [
+        "af469490-14a4-4783-a8da-6ce1675f1be3"
+      ],
+      "Name": "Nothing Works",
+      "Id": "8be9c4aa-a2af-43f9-8bda-fa363bbe755d",
+      "Description": "Nothing works, we probably should have at least something working"
+    }
+  ],
+  "Decisions": [
+    {
+      "Priority": "",
+      "Impact": "",
+      "DateCreated": "2019-05-10T18:27:42.2179305-07:00",
+      "DateNeeded": "2019-05-10T18:26:38.5751194-07:00",
+      "DateMade": "2019-05-10T18:26:38.5691187-07:00",
+      "DecisionMaker": "00000000-0000-0000-0000-000000000000",
+      "ExpectedCompletionDate": "2019-05-10T18:26:38.5661198-07:00",
+      "ActualCompletionDate": "2019-05-10T18:26:38.5621292-07:00",
+      "UpdateDate": "2019-05-10T18:27:42.218931-07:00",
+      "Status": "",
+      "StatusDescription": "Still need to decide if this is a silly idea or not.",
+      "MeetingNotes": [
+        "3 Yes's",
+        "3 Nos"
+      ],
+      "AssociatedTasks": [],
+      "Name": "Restart the entire code base",
+      "Id": "af469490-14a4-4783-a8da-6ce1675f1be3",
+      "Description": "Restart the entire code base"
+    }
+  ]
+}
