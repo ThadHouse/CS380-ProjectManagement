@@ -42,9 +42,10 @@ namespace CS380ProjectManagment
                 dateCreatedPicker.Value = decisionData.DateCreated;
                 dateNeededPicker.Value = decisionData.DateNeeded;
                 dateMadePicker.Value = decisionData.DateMade;
-                if (decisionMakerComboBox.Items.Contains(decisionData.DecisionMaker))
+                var decisionMaker = Database.Instance.Resources.Where(x => x.Id == decisionData.DecisionMaker).FirstOrDefault()?.Name;
+                if (decisionMakerComboBox.Items.Contains(decisionMaker))
                 {
-                    decisionMakerComboBox.SelectedItem = decisionData.DecisionMaker;
+                    decisionMakerComboBox.SelectedItem = decisionMaker;
                 }
                 expectedCompletionDatePicker.Value = decisionData.ExpectedCompletionDate;
                 actualCompletionDatePicker.Value = decisionData.ActualCompletionDate;
