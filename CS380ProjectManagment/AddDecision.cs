@@ -43,7 +43,7 @@ namespace CS380ProjectManagment
                 dateNeededPicker.Value = decisionData.DateNeeded;
                 dateMadePicker.Value = decisionData.DateMade;
                 var decisionMaker = Database.Instance.Resources.Where(x => x.Id == decisionData.DecisionMaker).FirstOrDefault()?.Name;
-                if (decisionMakerComboBox.Items.Contains(decisionMaker))
+                if (decisionMaker != null && decisionMakerComboBox.Items.Contains(decisionMaker))
                 {
                     decisionMakerComboBox.SelectedItem = decisionMaker;
                 }

@@ -17,21 +17,21 @@ namespace CS380ProjectManagment
             passwordTextBox.UseSystemPasswordChar = !showPasswordCheckBox.Checked;
         }
 
-        private async void LoginButton_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
             DisableInputs();
-            await HandleLogin();
+            HandleLogin();
             EnableInputs();
         }
 
-        private async void PasswordTextBox_KeyDown(object sender, KeyEventArgs e)
+        private void PasswordTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 e.Handled = true;
                 e.SuppressKeyPress = true;
                 DisableInputs();
-                await HandleLogin();
+                HandleLogin();
                 EnableInputs();
             }
         }
@@ -53,7 +53,7 @@ namespace CS380ProjectManagment
             showPasswordCheckBox.Enabled = false;
         }
 
-        private async System.Threading.Tasks.Task HandleLogin()
+        private void HandleLogin()
         {
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
